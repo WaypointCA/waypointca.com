@@ -3,626 +3,512 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Waypoint Compliance Advisory - Cybersecurity compliance consulting for federal and state government contractors. CMMC, FedRAMP, security assessments, and fractional CISO services. Service-Disabled Veteran-Owned Small Business.">
-    <meta name="keywords" content="CMMC, FedRAMP, cybersecurity compliance, federal contractor, state government, Florida MFMP, SDVOSB, veteran-owned, security assessment, fractional CISO, DoD compliance">
-    <title>Waypoint Compliance Advisory | Cybersecurity Compliance for Government Contractors</title>
-    <!-- Favicon -->
-	<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">    
+    <title>Waypoint Compliance Advisory | HIPAA & CMMC Cybersecurity Compliance</title>
+    <meta name="description" content="HIPAA Security Risk Assessments, CMMC gap assessments, and fractional vCISO services for healthcare organizations and defense contractors. SBA Certified SDVOSB.">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
         :root {
-            --primary-navy: #1a2b4c;
-            --accent-orange: #e67e22;
-            --accent-green: #27ae60;
-            --light-gray: #f5f5f5;
-            --text-dark: #2c3e50;
+            --navy: #112a4b;
+            --navy-light: #1a3a5c;
+            --accent: #e8852d;
+            --accent-hover: #d4751f;
             --white: #ffffff;
+            --light-bg: #f5f5f5;
+            --text-dark: #333333;
+            --text-muted: #666666;
+            --green: #2d8a4e;
+            --border: #e0e0e0;
+            --gold: #b79740;
         }
-        
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-            line-height: 1.6;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             color: var(--text-dark);
-            background-color: var(--light-gray);
+            line-height: 1.6;
         }
-        
-        /* Header */
-        header {
-            background-color: var(--primary-navy);
-            color: var(--white);
+
+        /* NAV */
+        nav {
+            background: var(--navy);
             padding: 1rem 2rem;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-        }
-        
-        .header-content {
-            max-width: 1200px;
-            margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
-        
         .logo {
-            font-size: 1.8rem;
+            color: var(--accent);
+            font-size: 1.4rem;
             font-weight: 700;
-        }
-        
-        .logo span {
-            color: var(--accent-orange);
-        }
-        
-        nav a {
-            color: var(--white);
             text-decoration: none;
-            margin-left: 2rem;
-            font-weight: 500;
-            transition: color 0.3s;
         }
-        
-        nav a:hover {
-            color: var(--accent-orange);
-        }
-        
-        /* Hero Section */
+        .logo span { color: var(--white); font-weight: 400; }
+        nav ul { list-style: none; display: flex; gap: 2rem; }
+        nav ul a { color: var(--white); text-decoration: none; font-size: 0.95rem; }
+        nav ul a:hover { color: var(--accent); }
+
+        /* HERO */
         .hero {
-            background: linear-gradient(135deg, var(--primary-navy) 0%, #2c3e50 100%);
+            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 50%, #2a4a6b 100%);
             color: var(--white);
-            padding: 8rem 2rem 4rem;
             text-align: center;
-            margin-top: 60px;
+            padding: 5rem 2rem;
         }
-        
+        .hero-badge {
+            display: inline-block;
+            background: var(--green);
+            color: var(--white);
+            padding: 0.4rem 1.2rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-bottom: 1.5rem;
+        }
         .hero h1 {
-            font-size: 2.8rem;
+            font-size: 2.6rem;
             margin-bottom: 1rem;
             line-height: 1.2;
         }
-        
-        .hero h1 span {
-            color: var(--accent-orange);
-        }
-        
+        .hero h1 .highlight { color: var(--accent); }
         .hero p {
-            font-size: 1.3rem;
+            font-size: 1.1rem;
+            color: #b0c4de;
             max-width: 700px;
             margin: 0 auto 2rem;
-            opacity: 0.95;
         }
-        
-        .status-badge {
+        .btn-primary {
             display: inline-block;
-            background-color: var(--accent-green);
+            background: var(--accent);
             color: var(--white);
-            padding: 0.5rem 1.5rem;
-            border-radius: 25px;
+            padding: 0.9rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
             font-weight: 600;
             font-size: 1rem;
-            margin-bottom: 2rem;
-            animation: pulse 2s infinite;
+            transition: background 0.2s;
         }
-        
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.8; }
-        }
-        
-        .cta-button {
-            display: inline-block;
-            background-color: var(--accent-orange);
-            color: var(--white);
-            padding: 1rem 2.5rem;
-            border-radius: 5px;
-            text-decoration: none;
+        .btn-primary:hover { background: var(--accent-hover); }
+
+        /* SDVOSB BAR */
+        .sdvosb-bar {
+            background: var(--gold);
+            color: var(--navy);
+            text-align: center;
+            padding: 0.5rem 1rem;
+            font-size: 0.8rem;
             font-weight: 600;
-            font-size: 1.1rem;
-            transition: transform 0.3s, box-shadow 0.3s;
+            letter-spacing: 0.5px;
         }
-        
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 20px rgba(230, 126, 34, 0.4);
-        }
-        
-        /* Main Content */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-        
-        section {
-            padding: 4rem 0;
-        }
-        
-        h2 {
-            color: var(--primary-navy);
+
+        /* SECTIONS */
+        section { padding: 4rem 2rem; }
+        section h2 {
+            text-align: center;
             font-size: 2rem;
-            margin-bottom: 1rem;
-            text-align: center;
+            margin-bottom: 0.5rem;
+            color: var(--navy);
         }
-        
-        .section-subtitle {
+        .section-sub {
             text-align: center;
-            color: #666;
+            color: var(--text-muted);
+            margin-bottom: 3rem;
             max-width: 600px;
-            margin: 0 auto 3rem;
+            margin-left: auto;
+            margin-right: auto;
         }
-        
-        /* Services */
-        .services {
-            background-color: var(--white);
-        }
-        
+
+        /* SERVICES GRID */
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        
-        .service-card {
-            background-color: var(--light-gray);
-            padding: 2rem;
-            border-radius: 10px;
-            border-left: 4px solid var(--accent-orange);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        
-        .service-card h3 {
-            color: var(--primary-navy);
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
-        }
-        
-        .service-card p {
-            color: #555;
-            margin-bottom: 1rem;
-        }
-        
-        .service-card ul {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .service-card li {
-            padding: 0.3rem 0;
-            padding-left: 1.2rem;
-            position: relative;
-            color: #555;
-            font-size: 0.95rem;
-        }
-        
-        .service-card li:before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: var(--accent-green);
-            font-weight: bold;
-        }
-        
-        /* Why Choose Us */
-        .why-us {
-            background-color: var(--primary-navy);
-            color: var(--white);
-        }
-        
-        .why-us h2 {
-            color: var(--white);
-        }
-        
-        .why-us .section-subtitle {
-            color: rgba(255,255,255,0.8);
-        }
-        
-        .credentials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        
-        .credential-item {
-            text-align: center;
-            padding: 1.5rem;
-        }
-        
-        .credential-icon {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        
-        .credential-item h3 {
-            color: var(--accent-orange);
-            margin-bottom: 0.5rem;
-        }
-        
-        .credential-item p {
-            opacity: 0.9;
-            font-size: 0.95rem;
-        }
-        
-        /* Certifications Bar */
-        .certifications {
-            background-color: var(--white);
-            padding: 2rem 0;
-            text-align: center;
-        }
-        
-        .cert-badges {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 1.5rem;
-            margin-top: 1rem;
-        }
-        
-        .cert-badge {
-            background-color: var(--primary-navy);
-            color: var(--white);
-            padding: 0.5rem 1.2rem;
-            border-radius: 5px;
-            font-weight: 600;
-            font-size: 0.9rem;
-        }
-        
-        /* Business Info */
-        .business-info {
-            background-color: var(--light-gray);
-        }
-        
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 2rem;
-            text-align: center;
-        }
-        
-        .info-item h4 {
-            color: var(--primary-navy);
-            margin-bottom: 0.5rem;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        .info-item p {
-            color: var(--text-dark);
-            font-weight: 600;
-            font-size: 1.1rem;
-        }
-        
-        /* Contact Section */
-        .contact {
-            background-color: var(--white);
-            text-align: center;
-        }
-        
-        .contact-content {
-            max-width: 600px;
+            max-width: 1100px;
             margin: 0 auto;
         }
-        
-        .contact-email {
-            display: inline-block;
-            color: var(--accent-orange);
-            font-size: 1.5rem;
-            font-weight: 600;
-            text-decoration: none;
-            margin: 1rem 0;
-            padding: 1rem 2rem;
-            border: 2px solid var(--accent-orange);
-            border-radius: 5px;
-            transition: all 0.3s;
-        }
-        
-        .contact-email:hover {
-            background-color: var(--accent-orange);
-            color: var(--white);
-        }
-        
-        .contact-note {
-            margin-top: 2rem;
+        .service-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
             padding: 1.5rem;
-            background-color: var(--light-gray);
-            border-radius: 10px;
         }
-        
-        .contact-note p {
+        .service-card.featured {
+            border-left: 4px solid var(--green);
+            background: #f0faf4;
+        }
+        .service-card h3 {
+            color: var(--navy);
             margin-bottom: 0.5rem;
+            font-size: 1.1rem;
         }
-        
-        /* Footer */
-        footer {
-            background-color: var(--primary-navy);
+        .service-card .tag {
+            display: inline-block;
+            font-size: 0.7rem;
+            padding: 0.15rem 0.5rem;
+            border-radius: 3px;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        .tag-required { background: #fee2e2; color: #991b1b; }
+        .tag-no-cert { background: #dcfce7; color: #166534; }
+        .service-card p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+        }
+        .service-card ul {
+            list-style: none;
+            font-size: 0.85rem;
+        }
+        .service-card ul li {
+            padding: 0.2rem 0;
+            color: var(--text-muted);
+        }
+        .service-card ul li::before {
+            content: "✓ ";
+            color: var(--green);
+            font-weight: bold;
+        }
+
+        /* WHY WAYPOINT */
+        .why-section {
+            background: var(--navy);
             color: var(--white);
-            padding: 2rem;
+        }
+        .why-section h2 { color: var(--white); }
+        .why-section .section-sub { color: #b0c4de; }
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
             text-align: center;
         }
-        
-        .footer-badges {
-            margin-bottom: 1rem;
+        .why-item .icon { font-size: 2.5rem; margin-bottom: 0.75rem; }
+        .why-item h3 { color: var(--accent); margin-bottom: 0.5rem; font-size: 1rem; }
+        .why-item p { color: #b0c4de; font-size: 0.85rem; }
+
+        /* CERTS */
+        .certs-row {
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 0 auto;
         }
-        
-        .footer-badge {
-            display: inline-block;
-            background-color: rgba(255,255,255,0.1);
+        .cert-badge {
+            background: var(--navy);
             color: var(--white);
             padding: 0.4rem 1rem;
-            border-radius: 20px;
+            border-radius: 5px;
             font-size: 0.85rem;
-            margin: 0.3rem;
+            font-weight: 600;
         }
-        
-        .footer-badge.highlight {
-            background-color: var(--accent-orange);
+
+        /* BUSINESS INFO */
+        .biz-section { background: var(--light-bg); }
+        .biz-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+            max-width: 900px;
+            margin: 0 auto 2rem;
+            text-align: center;
         }
-        
-        footer p {
-            opacity: 0.8;
-            font-size: 0.9rem;
-            margin-top: 0.5rem;
+        .biz-item label {
+            display: block;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-bottom: 0.25rem;
         }
-        
-        /* Responsive */
+        .biz-item .value {
+            font-weight: 700;
+            color: var(--navy);
+            font-size: 0.95rem;
+        }
+        .btn-secondary {
+            display: inline-block;
+            background: var(--navy);
+            color: var(--white);
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        .btn-secondary:hover { background: var(--navy-light); }
+        .center { text-align: center; }
+
+        /* CONTACT */
+        .contact-section { text-align: center; }
+        .contact-section .email-box {
+            display: inline-block;
+            border: 2px solid var(--accent);
+            padding: 0.8rem 2rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+        .contact-section .email-box a {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        .expect-box {
+            background: var(--light-bg);
+            max-width: 550px;
+            margin: 2rem auto 0;
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+        .expect-box strong { display: block; margin-bottom: 0.5rem; }
+
+        /* FOOTER */
+        footer {
+            background: var(--navy);
+            color: #b0c4de;
+            text-align: center;
+            padding: 1.5rem 2rem;
+            font-size: 0.8rem;
+        }
+        .footer-badges {
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+        .footer-badge {
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        .footer-badge.veteran { background: var(--accent); color: var(--white); }
+        .footer-badge.reg { background: #374151; color: #d1d5db; }
+
         @media (max-width: 768px) {
-            .header-content {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            nav {
-                margin-top: 1rem;
-            }
-            
-            nav a {
-                margin: 0 0.75rem;
-            }
-            
-            .hero {
-                padding: 7rem 1.5rem 3rem;
-            }
-            
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .hero p {
-                font-size: 1.1rem;
-            }
-            
-            section {
-                padding: 3rem 0;
-            }
-            
-            h2 {
-                font-size: 1.6rem;
-            }
+            .hero h1 { font-size: 1.8rem; }
+            nav ul { gap: 1rem; }
+            .services-grid { grid-template-columns: 1fr; }
+            .why-grid { grid-template-columns: repeat(2, 1fr); }
+            .biz-grid { grid-template-columns: repeat(2, 1fr); }
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <div class="logo">Waypoint<span>CA</span></div>
-            <nav>
-                <a href="#services">Services</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </nav>
+
+<!-- NAV -->
+<nav>
+    <a href="#" class="logo">Waypoint<span>CA</span></a>
+    <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- SDVOSB BAR -->
+<div class="sdvosb-bar">
+    SBA CERTIFIED SDVOSB &nbsp;|&nbsp; FL Certified Business Enterprise (Veteran Owned) &nbsp;|&nbsp; SAM.gov Registered &nbsp;|&nbsp; MFMP Vendor
+</div>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-badge">&#10003; Now Accepting Clients</div>
+    <h1>Cybersecurity Compliance<br><span class="highlight">for Healthcare &amp; Defense</span></h1>
+    <p>HIPAA security risk assessments for healthcare organizations. CMMC gap assessments for defense contractors. Fractional vCISO services for both. Veteran-owned. Results-driven.</p>
+    <a href="https://calendly.com/tech-waypointca/30min" class="btn-primary">Book a Free Consultation</a>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <h2>Our Services</h2>
+    <p class="section-sub">Compliance solutions for healthcare organizations, defense contractors, and federal agencies.</p>
+
+    <div class="services-grid">
+
+        <div class="service-card featured">
+            <span class="tag tag-no-cert">NO CERTIFICATION REQUIRED</span>
+            <h3>HIPAA Security Risk Assessments</h3>
+            <p>Federally required annual assessments for every healthcare covered entity. We identify gaps, build remediation plans, and produce evidence documentation that satisfies HHS Office for Civil Rights audit requirements.</p>
+            <ul>
+                <li>Annual SRA compliance (45 CFR 164.308)</li>
+                <li>Gap identification and remediation planning</li>
+                <li>Policy and procedure development</li>
+                <li>OCR audit preparation and evidence packaging</li>
+            </ul>
         </div>
-    </header>
-    
-    <section class="hero">
-        <div class="status-badge">✓ Now Accepting Clients</div>
-        <h1>Cybersecurity Compliance<br><span>for Federal & State Government</span></h1>
-        <p>Expert guidance through CMMC, FedRAMP, and federal & state security requirements. Veteran-owned. Mission-focused. Results-driven.</p>
-        <a href="https://calendly.com/tech-waypointca/30min" class="cta-button">Book a Free Consultation</a>
-    </section>
-    
-    <section class="services" id="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <p class="section-subtitle">Comprehensive cybersecurity compliance solutions tailored for defense contractors, federal agencies, and state government.</p>
-            
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>CMMC 2.0 Assessments</h3>
-                    <p>Prepare for Cybersecurity Maturity Model Certification with confidence.</p>
-                    <ul>
-                        <li>Gap assessments</li>
-                        <li>Remediation planning</li>
-                        <li>Policy development</li>
-                        <li>Assessment preparation</li>
-                    </ul>
-                </div>
-                
-                <div class="service-card">
-                    <h3>FedRAMP Consulting</h3>
-                    <p>Navigate the federal cloud authorization process efficiently.</p>
-                    <ul>
-                        <li>Readiness assessments</li>
-                        <li>Documentation support</li>
-                        <li>Control implementation</li>
-                        <li>Continuous monitoring</li>
-                    </ul>
-                </div>
-                
-                <div class="service-card">
-                    <h3>Security Assessments</h3>
-                    <p>Comprehensive evaluation of your security posture.</p>
-                    <ul>
-                        <li>Risk assessments</li>
-                        <li>Vulnerability analysis</li>
-                        <li>RMF implementation</li>
-                        <li>Security architecture review</li>
-                    </ul>
-                </div>
-                
-                <div class="service-card">
-                    <h3>Fractional CISO</h3>
-                    <p>Executive-level security leadership on a flexible basis.</p>
-                    <ul>
-                        <li>Security strategy</li>
-                        <li>Board/executive reporting</li>
-                        <li>Compliance oversight</li>
-                        <li>Team development</li>
-                    </ul>
-                </div>
-                
-                <div class="service-card">
-                    <h3>AI Security & Governance</h3>
-                    <p>Secure AI adoption aligned with emerging federal requirements.</p>
-                    <ul>
-                        <li>AI risk assessments</li>
-                        <li>Governance framework development</li>
-                        <li>Secure AI implementation</li>
-                        <li>AI supply chain security</li>
-                    </ul>
-                </div>
-                
-                <div class="service-card">
-                    <h3>Incident Response Planning</h3>
-                    <p>Be prepared when security events occur.</p>
-                    <ul>
-                        <li>IR plan development</li>
-                        <li>Tabletop exercises</li>
-                        <li>Business continuity planning</li>
-                        <li>DFARS incident reporting</li>
-                    </ul>
-                </div>
-            </div>
+
+        <div class="service-card">
+            <h3>CMMC 2.0 Gap Assessments</h3>
+            <p>Readiness evaluation for defense contractors preparing for third-party CMMC certification.</p>
+            <ul>
+                <li>NIST 800-171 control mapping</li>
+                <li>SSP and POA&amp;M development</li>
+                <li>Remediation planning</li>
+                <li>Assessment preparation</li>
+            </ul>
         </div>
-    </section>
-    
-    <section class="certifications">
-        <div class="container">
-            <h4 style="color: var(--primary-navy); margin-bottom: 0.5rem;">Professional Certifications</h4>
-            <div class="cert-badges">
-                <span class="cert-badge">CISSP</span>
-                <span class="cert-badge">CEH</span>
-                <span class="cert-badge">CHFI</span>
-                <span class="cert-badge">MS Cybersecurity & IA</span>
-                <span class="cert-badge">BS Software Engineering</span>
-            </div>
+
+        <div class="service-card">
+            <h3>Fractional vCISO</h3>
+            <p>Executive-level security leadership for organizations that need compliance guidance without a full-time hire.</p>
+            <ul>
+                <li>Security strategy and oversight</li>
+                <li>Board and executive reporting</li>
+                <li>Compliance program management</li>
+                <li>Team development and mentoring</li>
+            </ul>
         </div>
-    </section>
-    
-    <section class="why-us" id="about">
-        <div class="container">
-            <h2>Why Waypoint?</h2>
-            <p class="section-subtitle">Trusted expertise backed by real-world experience in federal and state security.</p>
-            
-            <div class="credentials-grid">
-                <div class="credential-item">
-                    <div class="credential-icon">🎖️</div>
-                    <h3>Veteran-Owned</h3>
-                    <p>10 years U.S. Navy service. We understand the mission and speak the language.</p>
-                </div>
-                
-                <div class="credential-item">
-                    <div class="credential-icon">🏛️</div>
-                    <h3>Government Experience</h3>
-                    <p>Direct experience with HHS OIG, USCIS, and major defense contractors.</p>
-                </div>
-                
-                <div class="credential-item">
-                    <div class="credential-icon">🔒</div>
-                    <h3>21+ Years Security</h3>
-                    <p>Deep expertise across IT security, compliance frameworks, and risk management.</p>
-                </div>
-                
-                <div class="credential-item">
-                    <div class="credential-icon">🎯</div>
-                    <h3>Results-Focused</h3>
-                    <p>Practical solutions that get you compliant and keep you mission-ready.</p>
-                </div>
-            </div>
+
+        <div class="service-card">
+            <h3>Security Assessments</h3>
+            <p>Comprehensive evaluation across PCI DSS, NIST 800-171, SOC 2, and FedRAMP frameworks.</p>
+            <ul>
+                <li>PCI DSS gap analysis</li>
+                <li>FedRAMP readiness</li>
+                <li>SOC 2 preparation</li>
+                <li>Security architecture review</li>
+            </ul>
         </div>
-    </section>
-    
-    <section class="business-info">
-        <div class="container">
-            <h2>Business Information</h2>
-            <p class="section-subtitle">Registered and ready for federal and state contracting.</p>
-            
-            <div class="info-grid">
-                <div class="info-item">
-                    <h4>UEI</h4>
-                    <p>K2NVWB4QXKN6</p>
-                </div>
-                <div class="info-item">
-                    <h4>CAGE Code</h4>
-                    <p>14Z63</p>
-                </div>
-                <div class="info-item">
-                    <h4>Status</h4>
-                    <p>SBA Certified SDVOSB</p>
-                </div>
-                <div class="info-item">
-                    <h4>Florida</h4>
-                    <p>MFMP Vendor</p>
-                </div>
-                <div class="info-item">
-                    <h4>Location</h4>
-                <p>DeLand, Florida</p>
-            </div>
+
+        <div class="service-card">
+            <h3>AI Security &amp; Governance</h3>
+            <p>Secure AI adoption aligned with emerging federal and industry requirements.</p>
+            <ul>
+                <li>AI risk assessments</li>
+                <li>Governance framework development</li>
+                <li>Secure AI implementation</li>
+                <li>AI supply chain security</li>
+            </ul>
         </div>
-        <div style="text-align: center; margin-top: 2rem;">
-            <a href="assets/Waypoint_Capability_Statement.pdf" download class="cta-button" style="background-color: var(--primary-navy);">
-                📄 Download Capability Statement
-            </a>
+
+        <div class="service-card">
+            <h3>Incident Response Planning</h3>
+            <p>Be prepared when security events occur. Meet HIPAA breach notification and DFARS incident reporting requirements.</p>
+            <ul>
+                <li>IR plan development</li>
+                <li>Tabletop exercises</li>
+                <li>Business continuity planning</li>
+                <li>HIPAA breach notification and DFARS reporting</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="center" style="margin-top:2rem;">
+        <h4 style="color:var(--navy);margin-bottom:0.75rem;">Professional Certifications</h4>
+        <div class="certs-row">
+            <span class="cert-badge">CISSP</span>
+            <span class="cert-badge">CEH</span>
+            <span class="cert-badge">CHFI</span>
+            <span class="cert-badge">MS Cybersecurity &amp; IA</span>
+            <span class="cert-badge">BS Software Engineering</span>
+            <span class="cert-badge">MBA (June 2026)</span>
         </div>
     </div>
 </section>
-    
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="contact-content">
-                <h2>Let's Talk</h2>
-                <p class="section-subtitle">Ready to strengthen your compliance posture? Schedule a free 30-minute consultation.</p>
-                
-                <a href="https://calendly.com/tech-waypointca/30min" class="cta-button" style="margin-bottom: 1.5rem;">Book Your Free Consultation</a>
-                
-                <p style="margin: 1.5rem 0; color: #666;">or email directly</p>
-                
-                <a href="mailto:cameron@waypointca.com" class="contact-email">cameron@waypointca.com</a>
-                
-                <div class="contact-note">
-                    <p><strong>What to Expect</strong></p>
-                    <p>A 30-minute Zoom call to discuss your compliance challenges, timeline, and how we can help.</p>
-                </div>
-            </div>
+
+<!-- WHY WAYPOINT -->
+<section class="why-section" id="about">
+    <h2>Why Waypoint?</h2>
+    <p class="section-sub">Trusted expertise backed by real-world experience in healthcare and federal security.</p>
+
+    <div class="why-grid">
+        <div class="why-item">
+            <div class="icon">&#127894;&#65039;</div>
+            <h3>Veteran-Owned</h3>
+            <p>10 years U.S. Navy service. We understand the mission and speak the language.</p>
         </div>
-    </section>
-    
-    <footer>
-        <div class="footer-badges">
-            <span class="footer-badge highlight">Service-Disabled Veteran-Owned</span>
-            <span class="footer-badge">SAM.gov Registered</span>
-            <span class="footer-badge">Florida MFMP Vendor</span>
-            <span class="footer-badge">Florida LLC</span>
+        <div class="why-item">
+            <div class="icon">&#127963;&#65039;</div>
+            <h3>Federal Healthcare Experience</h3>
+            <p>Direct experience with HHS OIG, USCIS, and major defense contractors. HIPAA and federal compliance from inside the agency.</p>
         </div>
-        <p>© 2026 Waypoint Compliance Advisory, LLC. All rights reserved.</p>
-        <p>7901 4th St N, STE 300, St Petersburg, FL 33702</p>
-    </footer>
+        <div class="why-item">
+            <div class="icon">&#128274;</div>
+            <h3>21+ Years Security</h3>
+            <p>Deep expertise across HIPAA, CMMC, PCI DSS, NIST 800-171, SOC 2, FedRAMP, and risk management.</p>
+        </div>
+        <div class="why-item">
+            <div class="icon">&#127919;</div>
+            <h3>Builder, Not Just Auditor</h3>
+            <p>We build the tools, automations, and evidence systems that make compliance sustainable, not a one-time exercise.</p>
+        </div>
+    </div>
+</section>
+
+<!-- BUSINESS INFO -->
+<section class="biz-section">
+    <h2>Business Information</h2>
+    <p class="section-sub">Registered and ready for federal, state, and commercial contracting.</p>
+
+    <div class="biz-grid">
+        <div class="biz-item">
+            <label>UEI</label>
+            <div class="value">K2NVWB4QXKN6</div>
+        </div>
+        <div class="biz-item">
+            <label>CAGE Code</label>
+            <div class="value">14Z63</div>
+        </div>
+        <div class="biz-item">
+            <label>Status</label>
+            <div class="value">SBA Certified SDVOSB</div>
+        </div>
+        <div class="biz-item">
+            <label>Florida</label>
+            <div class="value">MFMP Vendor + CBE</div>
+        </div>
+        <div class="biz-item">
+            <label>Location</label>
+            <div class="value">DeLand, Florida</div>
+        </div>
+    </div>
+
+    <div class="center">
+        <a href="assets/Waypoint_Capability_Statement_v2.pdf" class="btn-secondary">&#128196; Download Capability Statement</a>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+    <h2>Let's Talk</h2>
+    <p style="color:var(--text-muted);margin-bottom:2rem;">Ready to strengthen your compliance posture? Schedule a free 30-minute consultation.</p>
+
+    <a href="https://calendly.com/tech-waypointca/30min" class="btn-primary">Book Your Free Consultation</a>
+
+    <p style="margin-top:1.5rem;color:var(--text-muted);">or email directly</p>
+
+    <div class="email-box">
+        <a href="mailto:cameron@waypointca.com">cameron@waypointca.com</a>
+    </div>
+
+    <div class="expect-box">
+        <strong>What to Expect</strong>
+        A 30-minute Zoom call to discuss your compliance challenges, timeline, and how we can help.
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-badges">
+        <span class="footer-badge veteran">Service-Disabled Veteran-Owned</span>
+        <span class="footer-badge reg">SAM.gov Registered</span>
+        <span class="footer-badge reg">Florida MFMP Vendor</span>
+        <span class="footer-badge reg">FL Certified Business Enterprise</span>
+        <span class="footer-badge reg">Florida LLC</span>
+    </div>
+    <p>&copy; 2026 Waypoint Compliance Advisory, LLC. All rights reserved.</p>
+    <p style="margin-top:0.25rem;">7901 4th St N, STE 300, St Petersburg, FL 33702</p>
+</footer>
+
 </body>
 </html>
