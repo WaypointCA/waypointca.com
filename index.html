@@ -557,6 +557,111 @@
         }
 
         /* ═══════════════════════════════════
+           BLOG / INSIGHTS
+        ═══════════════════════════════════ */
+        .blog-section {
+            padding: 5rem 2rem;
+            background: var(--off-white);
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.75rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .blog-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.25s;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: inherit;
+        }
+        .blog-card:hover {
+            border-color: var(--accent);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            transform: translateY(-3px);
+        }
+        .blog-card-body {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        .blog-card-meta {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            font-weight: 500;
+            margin-bottom: 0.75rem;
+        }
+        .blog-card-category {
+            background: var(--accent-light);
+            color: var(--accent);
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .blog-card h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 0.6rem;
+            line-height: 1.35;
+            letter-spacing: -0.2px;
+        }
+        .blog-card p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            flex: 1;
+        }
+        .blog-card-tags {
+            display: flex;
+            gap: 0.4rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+        .blog-card-tags span {
+            font-size: 0.7rem;
+            padding: 0.2rem 0.55rem;
+            border-radius: 4px;
+            background: var(--light-bg);
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+        .blog-cta {
+            text-align: center;
+            margin-top: 2.5rem;
+        }
+        .blog-cta a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 0.6rem 1.25rem;
+            border: 2px solid var(--accent);
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+        .blog-cta a:hover {
+            background: var(--accent);
+            color: var(--white);
+        }
+
+        /* ═══════════════════════════════════
            CREDENTIALS & BUSINESS INFO
         ═══════════════════════════════════ */
         .credentials-section {
@@ -798,6 +903,7 @@
             .hero-stats { grid-template-columns: repeat(4, 1fr); }
             .services-grid { grid-template-columns: repeat(2, 1fr); }
             .why-grid { grid-template-columns: repeat(2, 1fr); }
+            .blog-grid { grid-template-columns: 1fr 1fr; }
             .footer-inner { grid-template-columns: 1fr 1fr; }
         }
 
@@ -828,6 +934,7 @@
             .market-content { grid-template-columns: 1fr; }
             .market-tabs { gap: 0.35rem; }
             .market-tab { padding: 0.6rem 1rem; font-size: 0.82rem; }
+            .blog-grid { grid-template-columns: 1fr; }
             .cred-grid { grid-template-columns: 1fr; }
             .expect-grid { grid-template-columns: 1fr; }
             .footer-inner { grid-template-columns: 1fr; }
@@ -853,6 +960,7 @@
         <li><a href="#services">Services</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#credentials">Credentials</a></li>
+        <li><a href="https://blog.waypointca.com" target="_blank" rel="noopener">Blog</a></li>
         <li><a href="#contact" class="nav-cta">Get Started</a></li>
     </ul>
     <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false"
@@ -1383,6 +1491,74 @@
     </div>
 </section>
 
+<!-- BLOG / INSIGHTS
+     Update these cards when new posts are published to blog.waypointca.com.
+     Each card links to a post URL. Replace href, date, category, title, description, and tags. -->
+<section class="blog-section" id="insights">
+    <div class="section-header">
+        <div class="section-label">Insights</div>
+        <h2>From the Field</h2>
+        <p>Practical guidance on compliance, security, and the tools we build to make both sustainable.</p>
+    </div>
+
+    <div class="blog-grid">
+        <a href="https://blog.waypointca.com/posts/cmmc-level-2-small-business/" class="blog-card">
+            <div class="blog-card-body">
+                <div class="blog-card-meta">
+                    <span class="blog-card-category">CMMC</span>
+                    <span>Coming Soon</span>
+                </div>
+                <h3>CMMC Level 2 for Small Businesses &mdash; What Actually Changed</h3>
+                <p>The final rule is live. Here is what small defense contractors need to know about scoping, POAM timelines, and what assessors are actually looking for.</p>
+                <div class="blog-card-tags">
+                    <span>CMMC 2.0</span>
+                    <span>NIST 800-171</span>
+                    <span>Defense</span>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://blog.waypointca.com/posts/hipaa-sra-mistakes/" class="blog-card">
+            <div class="blog-card-body">
+                <div class="blog-card-meta">
+                    <span class="blog-card-category">HIPAA</span>
+                    <span>Coming Soon</span>
+                </div>
+                <h3>Five HIPAA SRA Mistakes That Get Practices Fined</h3>
+                <p>Most security risk assessments fail on the same handful of gaps. We walk through the findings HHS OIG flags most often and how to close them before an audit.</p>
+                <div class="blog-card-tags">
+                    <span>HIPAA</span>
+                    <span>Risk Assessment</span>
+                    <span>Healthcare</span>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://blog.waypointca.com/posts/florida-makers-cmmc-ot/" class="blog-card">
+            <div class="blog-card-body">
+                <div class="blog-card-meta">
+                    <span class="blog-card-category">CMMC</span>
+                    <span>Coming Soon</span>
+                </div>
+                <h3>Florida Makers &amp; CMMC &mdash; The OT Blind Spot on Your Shop Floor</h3>
+                <p>Your CNC machines, PLCs, and IoT sensors are in scope. Most small manufacturers are not thinking about operational technology when they start a CMMC assessment &mdash; and it is the gap that kills timelines.</p>
+                <div class="blog-card-tags">
+                    <span>CMMC 2.0</span>
+                    <span>OT Security</span>
+                    <span>Manufacturing</span>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="blog-cta">
+        <a href="https://blog.waypointca.com" target="_blank" rel="noopener">
+            Visit the Blog
+            <svg aria-hidden="true" width="16" height="16" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </a>
+    </div>
+</section>
+
 <!-- CREDENTIALS -->
 <section class="credentials-section" id="credentials">
     <div class="section-header">
@@ -1516,6 +1692,7 @@
             <h4>Company</h4>
             <a href="#about">About</a>
             <a href="#credentials">Credentials</a>
+            <a href="https://blog.waypointca.com" target="_blank" rel="noopener">Blog</a>
             <a href="#contact">Contact</a>
             <a href="assets/Waypoint_CapStmt_Federal.pdf">Federal Cap Statement</a>
             <a href="assets/Waypoint_CapStmt_Defense.pdf">Defense Cap Statement</a>
