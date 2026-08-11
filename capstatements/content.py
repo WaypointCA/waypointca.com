@@ -66,7 +66,7 @@ PAST_PERFORMANCE = {
     "ula": (
         "United Launch Alliance (Vulcan Rocket Program)",
         "Cybersecurity Architect leading 28-person team. First-ever CNSSI 1253 assessment "
-        "and concurrent DMCA/ISO recertification for national security space program.",
+        "and concurrent DCMA/ISO recertification for national security space program.",
         "Zero audit findings. Established repeatable evidence and policy management program adopted program-wide.",
     ),
     "corporate": (
