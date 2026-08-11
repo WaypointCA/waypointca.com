@@ -1082,6 +1082,7 @@
     <div class="market-tabs" role="tablist" aria-label="Market segments">
         <div class="market-tab active" role="tab" id="tab-federal" tabindex="0" aria-selected="true" aria-controls="market-federal" onclick="switchMarket('federal')" onkeydown="tabKeyHandler(event,'federal')">Federal</div>
         <div class="market-tab" role="tab" id="tab-defense" tabindex="-1" aria-selected="false" aria-controls="market-defense" onclick="switchMarket('defense')" onkeydown="tabKeyHandler(event,'defense')">Defense</div>
+        <div class="market-tab" role="tab" id="tab-aerospace" tabindex="-1" aria-selected="false" aria-controls="market-aerospace" onclick="switchMarket('aerospace')" onkeydown="tabKeyHandler(event,'aerospace')">Aerospace</div>
         <div class="market-tab" role="tab" id="tab-healthcare" tabindex="-1" aria-selected="false" aria-controls="market-healthcare" onclick="switchMarket('healthcare')" onkeydown="tabKeyHandler(event,'healthcare')">Healthcare</div>
         <div class="market-tab" role="tab" id="tab-state" tabindex="-1" aria-selected="false" aria-controls="market-state" onclick="switchMarket('state')" onkeydown="tabKeyHandler(event,'state')">State</div>
         <div class="market-tab" role="tab" id="tab-commercial" tabindex="-1" aria-selected="false" aria-controls="market-commercial" onclick="switchMarket('commercial')" onkeydown="tabKeyHandler(event,'commercial')">Commercial</div>
@@ -1221,6 +1222,70 @@
         </div>
     </div>
 
+    <!-- AEROSPACE PANEL -->
+    <div class="market-panel" id="market-aerospace" role="tabpanel" aria-labelledby="tab-aerospace">
+        <div class="market-content">
+            <div class="market-info">
+                <h3>Aerospace &amp; Space Systems Compliance</h3>
+                <p class="lead">Aerospace suppliers answer to two rule sets that ask different questions about the same file. NIST 800-171 asks whether the data is protected. ITAR asks who can see it and whether they are a U.S. person. You can satisfy one and violate the other.</p>
+                <ul class="market-pain-points">
+                    <li>
+                        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        CUI and ITAR technical data mapped in one inventory, not two programs
+                    </li>
+                    <li>
+                        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        U.S. person access review across employees, MSPs, and cloud support paths
+                    </li>
+                    <li>
+                        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        Deemed export risk, including offshore MSP night shifts with domain access
+                    </li>
+                    <li>
+                        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        CNSSI 1253 categorization and overlays for national security space programs
+                    </li>
+                    <li>
+                        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        Shop floor OT scoping for CNC controllers, PLCs, and test equipment
+                    </li>
+                </ul>
+                <div class="advisory-note">
+                    <strong>Why this is different:</strong> Export control was never part of CMMC and is unaffected by the Phase 2 suspension. It carries its own enforcement path through the State Department's Directorate of Defense Trade Controls, with penalties that make most cybersecurity findings look modest. A compliance program that treats cybersecurity and export control as separate efforts will keep passing one while quietly failing the other.
+                </div>
+                <div style="display:flex;gap:1rem;flex-wrap:wrap;align-items:center;">
+                    <a href="https://calendly.com/tech-waypointca/30min" class="btn-primary">Schedule an Aerospace Consultation</a>
+                    <a href="assets/Waypoint_CapStmt_Aerospace.pdf" class="btn-outline" style="color:var(--navy);border-color:var(--border);">
+                        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14m0 0l-6-6m6 6l6-6"/></svg>
+                        Aerospace Capability Statement
+                    </a>
+                </div>
+            </div>
+            <div class="market-services">
+                <div class="market-service-card">
+                    <h4>CUI &amp; Export Control Alignment</h4>
+                    <p>One access model answering both regimes. Data inventory tagged by regime, U.S. person access review, and deemed export risk assessment.</p>
+                    <span class="tag tag-popular">Aerospace Specific</span>
+                </div>
+                <div class="market-service-card">
+                    <h4>CNSSI 1253 &amp; National Security Space</h4>
+                    <p>Categorization and overlay support under CNSSP 12 and CNSSI 1200, where civilian NIST 800-53 baselines and FedRAMP experience do not transfer cleanly.</p>
+                    <span class="tag tag-framework">CNSSI 1253</span>
+                </div>
+                <div class="market-service-card">
+                    <h4>NIST 800-171 &amp; SPRS Scoring</h4>
+                    <p>Full 110-control self-assessment with SSP, POA&amp;M, and the evidence trail to defend your posted score.</p>
+                    <span class="tag tag-framework">NIST 800-171</span>
+                </div>
+                <div class="market-service-card">
+                    <h4>Shop Floor OT Security</h4>
+                    <p>CNC controllers, PLCs, CMMs, and test stands scoped as Specialized Assets, with safeguards for equipment that cannot run modern endpoint tooling.</p>
+                    <span class="tag tag-framework">OT / ICS</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- HEALTHCARE PANEL -->
     <div class="market-panel" id="market-healthcare" role="tabpanel" aria-labelledby="tab-healthcare">
         <div class="market-content">
@@ -1311,6 +1376,10 @@
                     </li>
                     <li>
                         <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        HB 1085 grant readiness &mdash; the new Local Government Cybersecurity Protection Program
+                    </li>
+                    <li>
+                        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                         Incident response planning for public sector environments
                     </li>
                 </ul>
@@ -1332,6 +1401,11 @@
                     <h4>HIPAA for State Health Programs</h4>
                     <p>Security risk assessments for Medicaid, public health, and state-run healthcare programs.</p>
                     <span class="tag tag-framework">HIPAA</span>
+                </div>
+                <div class="market-service-card">
+                    <h4>HB 1085 Grant Readiness</h4>
+                    <p>Chapter 2026-115 created the Local Government Cybersecurity Protection Program inside the Florida Digital Service, effective July 1, 2026. FLDS procures solutions against a defined need, so a documented gap list is what makes a jurisdiction fundable.</p>
+                    <span class="tag tag-popular">New July 2026</span>
                 </div>
                 <div class="market-service-card">
                     <h4>Security Program Development</h4>
@@ -1568,6 +1642,38 @@
             </div>
         </a>
 
+        <a href="https://blog.waypointca.com/posts/fedramp-20x-compliance-becomes-code/" class="blog-card">
+            <div class="blog-card-body">
+                <div class="blog-card-meta">
+                    <span class="blog-card-category">FedRAMP</span>
+                    <span>Aug 11, 2026</span>
+                </div>
+                <h3>FedRAMP 20x Turns Compliance Into Code</h3>
+                <p>20x replaces narrative control descriptions with automated Key Security Indicators, and refuses written descriptions altogether, from humans and language models alike.</p>
+                <div class="blog-card-tags">
+                    <span>FedRAMP 20x</span>
+                    <span>OSCAL</span>
+                    <span>Cloud Security</span>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://blog.waypointca.com/posts/aerospace-cui-itar-two-regimes/" class="blog-card">
+            <div class="blog-card-body">
+                <div class="blog-card-meta">
+                    <span class="blog-card-category">Aerospace</span>
+                    <span>Aug 11, 2026</span>
+                </div>
+                <h3>Aerospace Suppliers Are Governed by Two Rule Sets That Do Not Agree</h3>
+                <p>A NIST 800-171 environment can be fully compliant and still be an ITAR violation, because the two regimes ask different questions about the same data. Add national security space and there are three.</p>
+                <div class="blog-card-tags">
+                    <span>ITAR</span>
+                    <span>CUI</span>
+                    <span>CNSSI 1253</span>
+                </div>
+            </div>
+        </a>
+
         <a href="https://blog.waypointca.com/posts/cmmc-phase-2-suspended-self-reporting-risk/" class="blog-card">
             <div class="blog-card-body">
                 <div class="blog-card-meta">
@@ -1575,7 +1681,7 @@
                     <span>Aug 11, 2026</span>
                 </div>
                 <h3>CMMC Phase 2 Is Suspended. Your Legal Exposure Went Up.</h3>
-                <p>The certification deadline is gone. The obligations are not, and the one government mechanism that used to catch a bad SPRS score before a lawyer did is paused. What defense contractors should actually be working on.</p>
+                <p>The certification deadline is gone. The obligations are not, and the one government mechanism that used to catch a bad SPRS score before a lawyer did is paused.</p>
                 <div class="blog-card-tags">
                     <span>NIST 800-171</span>
                     <span>DFARS</span>
@@ -1584,18 +1690,34 @@
             </div>
         </a>
 
-        <a href="https://blog.waypointca.com/posts/hipaa-sra-mistakes/" class="blog-card">
+        <a href="https://blog.waypointca.com/posts/florida-cybersecurity-mandates-no-safe-harbor/" class="blog-card">
             <div class="blog-card-body">
                 <div class="blog-card-meta">
-                    <span class="blog-card-category">HIPAA</span>
+                    <span class="blog-card-category">Florida</span>
+                    <span>Aug 11, 2026</span>
+                </div>
+                <h3>Florida Gave You the Mandate, Vetoed the Safe Harbor, and Just Funded the Fix</h3>
+                <p>Florida mandates NIST CSF by statute, the alignment deadlines have passed, the liability safe harbor was vetoed, and as of July 1 there is finally state money on the table.</p>
+                <div class="blog-card-tags">
+                    <span>NIST CSF 2.0</span>
+                    <span>Local Government</span>
+                    <span>HB 1085</span>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://blog.waypointca.com/posts/florida-makers-cmmc-ot/" class="blog-card">
+            <div class="blog-card-body">
+                <div class="blog-card-meta">
+                    <span class="blog-card-category">Manufacturing</span>
                     <span>Apr 14, 2026</span>
                 </div>
-                <h3>Five HIPAA SRA Mistakes That Get Practices Fined</h3>
-                <p>Most security risk assessments fail on the same handful of gaps. We walk through the findings HHS OIG flags most often and how to close them before an audit.</p>
+                <h3>Florida Makers and CMMC: The OT Blind Spot on Your Shop Floor</h3>
+                <p>Your CNC machines, PLCs, and IoT sensors are in scope. Most small manufacturers are not thinking about operational technology when they scope an assessment, and it is the gap that kills timelines.</p>
                 <div class="blog-card-tags">
-                    <span>HIPAA</span>
-                    <span>Risk Assessment</span>
-                    <span>Healthcare</span>
+                    <span>OT Security</span>
+                    <span>Manufacturing</span>
+                    <span>NIST 800-171</span>
                 </div>
             </div>
         </a>
@@ -1664,6 +1786,10 @@
                 <a href="assets/Waypoint_CapStmt_Defense.pdf" class="btn-secondary" style="background:var(--navy-mid);" aria-label="Download Defense Capability Statement (PDF)">
                     <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14m0 0l-6-6m6 6l6-6"/></svg>
                     Defense
+                </a>
+                <a href="assets/Waypoint_CapStmt_Aerospace.pdf" class="btn-secondary" aria-label="Download Aerospace Capability Statement (PDF)">
+                    <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14m0 0l-6-6m6 6l6-6"/></svg>
+                    Aerospace
                 </a>
                 <a href="assets/Waypoint_CapStmt_Healthcare.pdf" class="btn-secondary" aria-label="Download Healthcare Capability Statement (PDF)">
                     <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14m0 0l-6-6m6 6l6-6"/></svg>
@@ -1734,6 +1860,7 @@
             <h4>Markets</h4>
             <a href="#markets" onclick="switchMarket('federal')">Federal</a>
             <a href="#markets" onclick="switchMarket('defense')">Defense</a>
+            <a href="#markets" onclick="switchMarket('aerospace')">Aerospace</a>
             <a href="#markets" onclick="switchMarket('healthcare')">Healthcare</a>
             <a href="#markets" onclick="switchMarket('state')">State</a>
             <a href="#markets" onclick="switchMarket('commercial')">Commercial</a>
@@ -1746,6 +1873,7 @@
             <a href="#contact">Contact</a>
             <a href="assets/Waypoint_CapStmt_Federal.pdf">Federal Cap Statement</a>
             <a href="assets/Waypoint_CapStmt_Defense.pdf">Defense Cap Statement</a>
+            <a href="assets/Waypoint_CapStmt_Aerospace.pdf">Aerospace Cap Statement</a>
             <a href="assets/Waypoint_CapStmt_Healthcare.pdf">Healthcare Cap Statement</a>
             <a href="assets/Waypoint_CapStmt_State.pdf">State Cap Statement</a>
         </div>
@@ -1762,7 +1890,7 @@
 </footer>
 
 <script>
-    var markets = ['federal','defense','healthcare','state','commercial'];
+    var markets = ['federal','defense','aerospace','healthcare','state','commercial'];
 
     function switchMarket(market) {
         var tabs = document.querySelectorAll('[role="tab"]');

@@ -204,6 +204,65 @@ MARKETS = {
         ],
     },
     # ─────────────────────────────────────────────────────────────────────────
+    "Aerospace": {
+        "filename": "Waypoint_CapStmt_Aerospace.pdf",
+        "tagline": "CUI, Export Control & National Security Space Compliance for Aerospace",
+        "overview": (
+            "Waypoint Compliance Advisory is an SBA-certified Service-Disabled Veteran-Owned Small Business supporting "
+            "aerospace and space suppliers through the overlapping requirements that make this sector different. A single "
+            "engineering file can be CUI under DFARS 252.204-7012 and technical data under ITAR at the same time, and the "
+            "two regimes ask different questions: NIST 800-171 asks whether the data is protected, ITAR asks who can see "
+            "it and whether they are a U.S. person. Our founder led the first-ever CNSSI 1253 assessment for the ULA "
+            "Vulcan rocket program with zero audit findings."
+        ),
+        "competencies": [
+            ("CUI & Export Control Alignment",
+             "One access model that answers both regimes. CUI and ITAR technical data inventory, U.S. person access "
+             "review across employees, MSPs, and cloud support paths, and deemed export risk assessment."),
+            ("NIST 800-171 Self-Assessment & SPRS",
+             "Full 110-control assessment scored to the DoD methodology, SSP and POA&M development, and the evidence "
+             "trail to defend the score you post to SPRS."),
+            ("CNSSI 1253 & National Security Space",
+             "Categorization and overlay support for national security systems under CNSSP 12 and CNSSI 1200, plus "
+             "assessment readiness for space programs where civilian baselines do not apply."),
+            ("OT & Shop Floor Security",
+             "CNC controllers, PLCs, coordinate measuring machines, and test stands scoped as Specialized Assets, with "
+             "risk-based safeguards for equipment that cannot run modern endpoint tooling."),
+            ("Fractional vCISO — Aerospace",
+             "Ongoing security leadership spanning cybersecurity and export control, so the two programs are run as one "
+             "question rather than two that quietly contradict each other."),
+        ],
+        "pp_order": ["ula", "navy", "corporate", "uscis", "hhs"],
+        "why": [
+            ("First-Ever CNSSI 1253 Assessment",
+             "Cybersecurity Architect over a 28-person team for the ULA Vulcan program, concurrent with DCMA and ISO "
+             "recertification, closed with zero audit findings."),
+            ("Two Regimes, One Access Model",
+             "Most advisors treat cybersecurity and export control as separate programs. An 800-171 compliant "
+             "environment with offshore MSP administrators is a nightly deemed export. We design for both."),
+            ("SDVOSB Set-Aside Eligible",
+             "Competitive advantage on DoD and civilian set-aside vehicles, and support for prime small business "
+             "subcontracting goals. SBA certified SDVOSB, App #63605."),
+            ("Florida Space Coast Presence",
+             "Based in DeLand, within reach of the Space Coast supplier base for on-site scoping, OT walkdowns, and "
+             "assessment support without travel line items."),
+        ],
+        "teaming": [
+            ("Who We Serve",
+             "Launch vehicle and satellite suppliers, precision machine shops, avionics and component manufacturers, "
+             "ground segment operators, and aerospace primes needing subcontractor assessment."),
+            ("Subcontracting Available",
+             "Available to aerospace and defense primes as a specialized security and compliance subcontractor. SDVOSB "
+             "status supports your small business subcontracting plan goals."),
+            ("Engagement Model",
+             "Fixed-price NIST 800-171 self-assessments with SPRS-ready scoring, CUI and export control data mapping, "
+             "and fractional vCISO retainers ($4K–$8K/month). CNSSI 1253 readiness scoped separately."),
+            ("Clearance Background",
+             "Founder holds prior clearance history and 10-year Navy service background. Available for sensitive "
+             "environments with appropriate sponsorship."),
+        ],
+    },
+    # ─────────────────────────────────────────────────────────────────────────
     "Healthcare": {
         "filename": "Waypoint_CapStmt_Healthcare.pdf",
         "tagline": "HIPAA Security, Risk Assessment & ePHI Protection for Healthcare",
