@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Waypoint Compliance Advisory</title>
+    <meta name="robots" content="noindex">
+    <link rel="icon" href="/assets/favicon.ico" sizes="any">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        :root{--navy:#0d2240;--navy-mid:#153560;--navy-light:#1e4d80;--accent:#e8852d;--accent-hover:#d4751f;--white:#fff}
+        body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+             background:linear-gradient(160deg,var(--navy) 0%,var(--navy-mid) 40%,var(--navy-light) 100%);
+             color:var(--white);min-height:100vh;display:flex;align-items:center;justify-content:center;
+             padding:2rem;line-height:1.6;position:relative;overflow:hidden}
+        body::before{content:'';position:absolute;inset:0;
+             background:radial-gradient(ellipse at 80% 20%,rgba(232,133,45,.10) 0%,transparent 60%)}
+        .wrap{position:relative;max-width:620px;text-align:center}
+        .code{font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--accent);margin-bottom:1rem}
+        h1{font-size:2.4rem;font-weight:800;letter-spacing:-1px;line-height:1.15;margin-bottom:1rem}
+        p{color:rgba(255,255,255,.7);margin-bottom:2rem}
+        .actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+        a.btn{display:inline-block;background:var(--accent);color:var(--white);padding:.8rem 1.6rem;
+              border-radius:8px;text-decoration:none;font-weight:600;font-size:.95rem;transition:background .2s}
+        a.btn:hover{background:var(--accent-hover)}
+        a.ghost{background:transparent;border:1px solid rgba(255,255,255,.25)}
+        a.ghost:hover{background:rgba(255,255,255,.08)}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="code">Error 404</div>
+        <h1>That page is off the chart</h1>
+        <p>The page you asked for does not exist, or it moved. The capability statements and market pages are all reachable from the home page.</p>
+        <div class="actions">
+            <a href="/" class="btn">Back to waypointca.com</a>
+            <a href="https://blog.waypointca.com" class="btn ghost">Read the blog</a>
+        </div>
+    </div>
+</body>
+</html>
