@@ -60,7 +60,7 @@ PAST_PERFORMANCE = {
     "uscis": (
         "U.S. Department of Homeland Security / USCIS",
         "Security architecture and access control for federal identity management systems. "
-        "NIST 800-53 control mapping, FedRAMP boundary scoping, and ATO documentation.",
+        "NIST 800-53 Rev 5 control mapping, FedRAMP boundary scoping, and ATO documentation.",
         "Delivered ATO-ready documentation for cloud-hosted IAM components supporting USCIS mission systems.",
     ),
     "ula": (
@@ -72,7 +72,7 @@ PAST_PERFORMANCE = {
     "corporate": (
         "Corporate Tools / NW Registered Agent",
         "Security Engineering Manager. AI-powered security automation, CI/CD security review, "
-        "SOC 2 Type 1 readiness, and PCI DSS compliance environment.",
+        "SOC 2 Type 1 readiness, and PCI DSS v4.0.1 compliance environment.",
         "700+ accounts analyzed across 11 fraud investigations. Automated evidence collection reduced audit prep time significantly.",
     ),
     "navy": (
@@ -87,18 +87,21 @@ MARKETS = {
     # ─────────────────────────────────────────────────────────────────────────
     "Federal": {
         "filename": "Waypoint_CapStmt_Federal.pdf",
-        "tagline": "FedRAMP, FISMA & Cybersecurity Compliance for Federal Agencies",
+        "tagline": "FedRAMP 20x, FISMA & Cybersecurity Compliance for Federal Agencies",
         "overview": (
             "Waypoint Compliance Advisory is an SBA-certified Service-Disabled Veteran-Owned Small Business delivering "
             "FedRAMP, FISMA, and cybersecurity compliance services to federal agencies and cloud service providers. "
             "With direct experience inside HHS OIG and DHS/USCIS, we understand what federal compliance looks like from "
-            "the inside — not just from reading the framework. 21+ years of hands-on federal security experience means "
+            "the inside, not just from reading the framework. 21+ years of hands-on federal security experience means "
             "we know what auditors actually check."
         ),
         "competencies": [
-            ("FedRAMP Advisory",
-             "Authorization readiness assessment, control implementation guidance, SSP development, and continuous "
-             "monitoring support for CSPs seeking federal agency ATO."),
+            ("FedRAMP 20x Advisory",
+             "Authorization readiness under the 20x model and CR26 rulesets, Key Security Indicators, continuous "
+             "validation, and machine-readable evidence for CSPs seeking federal agency ATO."),
+            ("FedRAMP Rev 5 Transition",
+             "Machine-readable authorization package conversion ahead of the September 30, 2026 deadline, plus "
+             "transition planning before Rev 5 applications close June 11, 2027."),
             ("FISMA & NIST RMF",
              "System categorization, control selection and implementation, FISMA ATO package development, and ongoing "
              "RMF monitoring for civilian federal systems."),
@@ -106,7 +109,7 @@ MARKETS = {
              "AI risk assessments, governance framework development aligned to NIST AI RMF and OMB AI policy, secure AI "
              "implementation, and AI supply chain security reviews."),
             ("Security Architecture & Assessment",
-             "Zero trust architecture design, DISA STIG compliance, NIST 800-53 control gap analysis, and security "
+             "Zero trust architecture design, DISA STIG compliance, NIST 800-53 Rev 5 control gap analysis, and security "
              "architecture review for federal IT environments."),
             ("Fractional vCISO — Federal",
              "Ongoing security leadership for federal contractors and agencies. Policy development, risk governance, "
@@ -117,11 +120,11 @@ MARKETS = {
             ("SDVOSB Set-Aside Eligible",
              "Competitive advantage on VA, DoD, and civilian federal set-aside vehicles. SBA certified SDVOSB, App #63605."),
             ("Agency Insider Perspective",
-             "Direct HHS OIG and USCIS/DHS experience. We know what federal auditors actually look for — and the gaps "
+             "Direct HHS OIG and USCIS/DHS experience. We know what federal auditors actually look for, including the gaps "
              "that consistently get missed by outside consultants."),
-            ("AI Security Ready",
-             "Practical AI governance experience aligned to NIST AI RMF and current OMB AI policy. Ready for agencies "
-             "navigating AI adoption requirements."),
+            ("Current on a Moving Target",
+             "FedRAMP 20x, the Rev 5 machine-readable mandate, and CMMC reform are all in motion right now. We track "
+             "the rule changes so your authorization strategy is built on what is actually in effect."),
             ("Builder, Not Just Auditor",
              "Delivers automated evidence systems, policy libraries, and continuous monitoring tooling that make federal "
              "compliance sustainable beyond the ATO milestone."),
@@ -132,9 +135,9 @@ MARKETS = {
              "status supports your small business subcontracting goals."),
             ("Teaming Partners Welcome",
              "Actively seeking teaming arrangements with systems integrators, CDM program primes, and cloud service "
-             "providers pursuing FedRAMP authorization."),
+             "providers pursuing FedRAMP 20x authorization."),
             ("Engagement Model",
-             "Fixed-price FedRAMP readiness assessments and FISMA ATO packages. Fractional vCISO retainers "
+             "Fixed-price FedRAMP 20x readiness assessments and FISMA ATO packages. Fractional vCISO retainers "
              "($4K–$8K/month). ConMon and ongoing compliance support available."),
             ("Clearance Background",
              "Founder holds prior clearance history and 10-year Navy service background. Available for sensitive "
@@ -148,7 +151,7 @@ MARKETS = {
         "overview": (
             "Waypoint Compliance Advisory is an SBA-certified Service-Disabled Veteran-Owned Small Business helping "
             "defense contractors meet the CUI protection obligations already written into their contracts. DFARS "
-            "252.204-7012 and NIST SP 800-171 apply today, independent of any certification program — and a weak or "
+            "252.204-7012 and NIST SP 800-171 apply today, independent of any certification program. A weak or "
             "undocumented SPRS score is a contract and False Claims Act risk right now. We build the security program "
             "and evidence that satisfies current requirements and carries directly into third-party certification if "
             "and when DoD resumes CMMC Phase 2."
@@ -161,7 +164,7 @@ MARKETS = {
              "Prioritized remediation of the controls costing you the most points, sequenced by score impact per dollar "
              "so a low score becomes a credible one before your next award."),
             ("SSP & POA&M Development",
-             "System security plans and plans of action that hold up under government review — the documentation DFARS "
+             "System security plans and plans of action that hold up under government review. This is the documentation DFARS "
              "assumes you already maintain."),
             ("CUI Scoping & Supply Chain",
              "CUI identification and enclave scoping to shrink your assessment boundary, plus subcontractor flow-down "
@@ -183,7 +186,7 @@ MARKETS = {
              "10 years U.S. Navy combat systems and $22M+ defense procurement."),
             ("Certification-Ready by Design",
              "Every control we implement is documented to assessment standard. If Phase 2 resumes, you are not starting "
-             "over — you are scheduling an assessment."),
+             "over. You are scheduling an assessment."),
         ],
         "teaming": [
             ("Subcontracting Available",
@@ -209,7 +212,7 @@ MARKETS = {
             "HIPAA Security Rule compliance to covered entities, business associates, and health IT organizations. The "
             "annual Security Risk Assessment required by 45 CFR 164.308(a)(1)(ii)(A) is the single most common finding "
             "in HHS OCR enforcement actions. With direct HHS Office of Inspector General experience, we know what "
-            "federal healthcare auditors actually check — and what a defensible assessment looks like."
+            "federal healthcare auditors actually check, and what a defensible assessment looks like."
         ),
         "competencies": [
             ("HIPAA Security Risk Assessment",
@@ -236,8 +239,12 @@ MARKETS = {
             ("Annual Requirement, Recurring Partner",
              "The SRA is not a one-time project. We build assessment and evidence programs designed to be repeated "
              "efficiently every year rather than rebuilt from scratch."),
+            ("Current on the Proposed Rewrite",
+             "The January 2025 Security Rule NPRM would remove the addressable/required distinction and mandate MFA, "
+             "encryption, and asset inventory. Final action is now expected in 2027. We assess against today's rule "
+             "while flagging where the proposal would move the bar."),
             ("Beyond the Checklist",
-             "Risk assessments that identify real exposure in your environment — not a template with your logo on it. "
+             "Risk assessments that identify real exposure in your environment, not a template with your logo on it. "
              "Findings are ranked by actual likelihood and patient data impact."),
             ("Builder, Not Just Auditor",
              "Delivers automated evidence collection, policy libraries, and continuous monitoring tooling that keep you "
@@ -269,11 +276,12 @@ MARKETS = {
             "commercial security experience, applied to public sector budgets and timelines."
         ),
         "competencies": [
-            ("NIST CSF Assessment & Roadmap",
-             "Cybersecurity maturity baseline against the NIST Cybersecurity Framework with a prioritized, "
-             "budget-aware remediation roadmap suitable for legislative and board reporting."),
+            ("NIST CSF 2.0 Assessment & Roadmap",
+             "Cybersecurity maturity baseline against NIST CSF 2.0, including the Govern function added in the 2.0 "
+             "release, with a prioritized, budget-aware remediation roadmap suitable for legislative and board "
+             "reporting."),
             ("Security Program Development",
-             "Build or mature an agency security program end to end — governance structure, policies and procedures, "
+             "Build or mature an agency security program end to end: governance structure, policies and procedures, "
              "control implementation, and workforce training."),
             ("HIPAA for State Health Programs",
              "Security risk assessments and Security Rule compliance for Medicaid, county health departments, and "
@@ -291,7 +299,7 @@ MARKETS = {
              "Registered MyFloridaMarketPlace vendor and certified Florida Veteran Business Enterprise / Certified "
              "Business Enterprise. Set-aside eligible and ready to contract."),
             ("Federal Rigor, Public Sector Budgets",
-             "HHS OIG and DHS/USCIS experience brought to state and local agencies — federal-grade assessment quality "
+             "HHS OIG and DHS/USCIS experience brought to state and local agencies, delivering federal-grade assessment quality "
              "scoped and priced for public sector realities."),
             ("Local Presence",
              "Based in DeLand, Florida. On-site availability for Central Florida agencies, districts, and "
@@ -308,7 +316,7 @@ MARKETS = {
              "Available to state IT primes and integrators as a specialized security and compliance subcontractor. "
              "VBE/CBE status supports diversity and veteran participation requirements."),
             ("Engagement Model",
-             "Fixed-price NIST CSF assessments and security program builds. Fractional vCISO retainers "
+             "Fixed-price NIST CSF 2.0 assessments and security program builds. Fractional vCISO retainers "
              "($4K–$8K/month). Purchasable through MFMP and state term contract vehicles."),
             ("Grant & Funding Support",
              "Assessment documentation structured to support State and Local Cybersecurity Grant Program applications "

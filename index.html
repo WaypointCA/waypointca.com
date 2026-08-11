@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Waypoint Compliance Advisory | Cybersecurity Compliance for Federal, State & Commercial</title>
-    <meta name="description" content="Cybersecurity compliance advisory for federal agencies, state government, healthcare, and commercial organizations. HIPAA, NIST 800-171, FedRAMP, FISMA, SOC 2, PCI DSS. SBA Certified SDVOSB. 21+ years experience.">
+    <meta name="description" content="Cybersecurity compliance advisory for federal agencies, state government, healthcare, and commercial organizations. HIPAA, NIST 800-171, FedRAMP 20x, FISMA, SOC 2, PCI DSS. SBA Certified SDVOSB. 21+ years experience.">
     <meta property="og:title" content="Waypoint Compliance Advisory | Cybersecurity Compliance">
     <meta property="og:description" content="Cybersecurity compliance advisory for federal, state, healthcare, and commercial organizations. HIPAA, NIST 800-171, FedRAMP, FISMA, SOC 2. SBA Certified SDVOSB.">
     <meta property="og:type" content="website">
@@ -465,8 +465,21 @@
             transform: translateY(-2px);
         }
         .service-card.featured {
-            border: 2px solid var(--green);
-            background: linear-gradient(to bottom, var(--green-light), var(--white));
+            border: 2px solid var(--accent);
+            background: linear-gradient(to bottom, var(--accent-light), var(--white));
+        }
+        .service-card .flag {
+            position: absolute;
+            top: -10px;
+            left: 2rem;
+            background: var(--accent);
+            color: var(--white);
+            font-size: 0.66rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            padding: 0.2rem 0.65rem;
+            border-radius: 4px;
         }
         .service-card .card-icon {
             width: 44px;
@@ -1079,15 +1092,19 @@
         <div class="market-content">
             <div class="market-info">
                 <h3>Federal Agency Cybersecurity Compliance</h3>
-                <p class="lead">Mission-critical compliance for civilian agencies and cloud service providers. From FISMA to FedRAMP, we help you meet mandates while keeping operations running.</p>
+                <p class="lead">Mission-critical compliance for civilian agencies and cloud service providers. FedRAMP is in the middle of the largest change in its history, and the transition deadlines are now inside every CSP's planning horizon. We help you meet the mandates while keeping operations running.</p>
                 <ul class="market-pain-points">
                     <li>
                         <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        NIST 800-53 control assessments for civilian agency compliance
+                        FedRAMP 20x authorization under the CR26 rulesets
                     </li>
                     <li>
                         <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        FedRAMP readiness, cloud authorization, and continuous monitoring
+                        Rev 5 machine-readable package conversion ahead of the September 30, 2026 deadline
+                    </li>
+                    <li>
+                        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        NIST 800-53 Rev 5 control assessments for civilian agency compliance
                     </li>
                     <li>
                         <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
@@ -1112,14 +1129,19 @@
             </div>
             <div class="market-services">
                 <div class="market-service-card">
-                    <h4>NIST 800-53 Assessments</h4>
-                    <p>Full control assessments against NIST 800-53 for civilian agencies and their contractors.</p>
-                    <span class="tag tag-framework">NIST 800-53</span>
+                    <h4>FedRAMP 20x Readiness</h4>
+                    <p>Authorization under the 20x model and the CR26 rulesets, including Key Security Indicators, continuous validation, and machine-readable evidence.</p>
+                    <span class="tag tag-popular">Largest Change in Years</span>
                 </div>
                 <div class="market-service-card">
-                    <h4>FedRAMP Readiness &amp; Authorization</h4>
-                    <p>Pre-assessment against FedRAMP baselines, evidence gathering, cloud authorization support, and continuous monitoring.</p>
-                    <span class="tag tag-framework">FedRAMP</span>
+                    <h4>Rev 5 Transition &amp; Package Conversion</h4>
+                    <p>Machine-readable authorization packages for existing Rev 5 CSPs, plus transition planning before Rev 5 applications close in June 2027.</p>
+                    <span class="tag tag-framework">FedRAMP Rev 5</span>
+                </div>
+                <div class="market-service-card">
+                    <h4>NIST 800-53 Rev 5 Assessments</h4>
+                    <p>Full control assessments against NIST 800-53 Rev 5, including Release 5.2.0 updates, for civilian agencies and their contractors.</p>
+                    <span class="tag tag-framework">NIST 800-53 Rev 5</span>
                 </div>
                 <div class="market-service-card">
                     <h4>FISMA Compliance</h4>
@@ -1140,7 +1162,7 @@
         <div class="market-content">
             <div class="market-info">
                 <h3>Defense Industrial Base Compliance</h3>
-                <p class="lead">DFARS 252.204-7012 still applies to every contract that touches CUI &mdash; and it always has, with or without a certification program. We help DIB contractors post a defensible SPRS score, protect CUI, and satisfy the obligations they are actually being held to today.</p>
+                <p class="lead">DFARS 252.204-7012 still applies to every contract that touches CUI, and it always has, with or without a certification program. We help DIB contractors post a defensible SPRS score, protect CUI, and satisfy the obligations they are actually being held to today.</p>
                 <ul class="market-pain-points">
                     <li>
                         <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
@@ -1148,7 +1170,7 @@
                     </li>
                     <li>
                         <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        DFARS 252.204-7012 safeguarding &mdash; contractually binding regardless of certification status
+                        DFARS 252.204-7012 safeguarding, contractually binding regardless of certification status
                     </li>
                     <li>
                         <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
@@ -1164,7 +1186,7 @@
                     </li>
                 </ul>
                 <div class="advisory-note">
-                    <strong>Where CMMC stands:</strong> DoD suspended the CMMC Phase 2 third-party certification requirement in July 2026, and a reform task force is reviewing the program. Nothing about your underlying NIST 800-171 and DFARS obligations changed. We build the security program and evidence that satisfies today's requirements &mdash; and that carries straight into certification if and when Phase 2 resumes.
+                    <strong>Where CMMC stands:</strong> DoD suspended the CMMC Phase 2 third-party certification requirement in July 2026, and a reform task force is reviewing the program. Nothing about your underlying NIST 800-171 and DFARS obligations changed. We build the security program and evidence that satisfies today's requirements, and that carries straight into certification if and when Phase 2 resumes.
                 </div>
                 <div style="display:flex;gap:1rem;flex-wrap:wrap;align-items:center;">
                     <a href="https://calendly.com/tech-waypointca/30min" class="btn-primary">Schedule a Defense Consultation</a>
@@ -1182,7 +1204,7 @@
                 </div>
                 <div class="market-service-card">
                     <h4>SSP &amp; POA&amp;M Development</h4>
-                    <p>System security plans and remediation roadmaps that hold up under government review &mdash; the documentation DFARS assumes you already have.</p>
+                    <p>System security plans and remediation roadmaps that hold up under government review. This is the documentation DFARS assumes you already have.</p>
                     <span class="tag tag-framework">NIST 800-171</span>
                 </div>
                 <div class="market-service-card">
@@ -1208,7 +1230,7 @@
                 <ul class="market-pain-points">
                     <li>
                         <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        HIPAA Security Risk Assessments &mdash; federally required annually
+                        HIPAA Security Risk Assessments, federally required annually
                     </li>
                     <li>
                         <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
@@ -1217,6 +1239,10 @@
                     <li>
                         <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                         Health IT security architecture and ePHI protection
+                    </li>
+                    <li>
+                        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        Readiness for the proposed Security Rule overhaul, with final action now expected in 2027
                     </li>
                     <li>
                         <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
@@ -1269,15 +1295,15 @@
                 <ul class="market-pain-points">
                     <li>
                         <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        NIST Cybersecurity Framework alignment and maturity assessments
+                        NIST CSF 2.0 alignment, including the new Govern function, and maturity assessments
                     </li>
                     <li>
                         <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        Florida MFMP registered vendor &mdash; ready for state procurement
+                        Florida MFMP registered vendor, ready for state procurement
                     </li>
                     <li>
                         <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        VBE/CBE set-aside eligible &mdash; Veteran Business Enterprise certified
+                        VBE/CBE set-aside eligible, Veteran Business Enterprise certified
                     </li>
                     <li>
                         <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
@@ -1298,9 +1324,9 @@
             </div>
             <div class="market-services">
                 <div class="market-service-card">
-                    <h4>NIST CSF Assessments</h4>
-                    <p>Baseline cybersecurity maturity against the NIST Cybersecurity Framework with prioritized remediation roadmap.</p>
-                    <span class="tag tag-framework">NIST CSF</span>
+                    <h4>NIST CSF 2.0 Assessments</h4>
+                    <p>Baseline cybersecurity maturity against NIST CSF 2.0, including the Govern function added in the 2.0 release, with a prioritized remediation roadmap.</p>
+                    <span class="tag tag-framework">NIST CSF 2.0</span>
                 </div>
                 <div class="market-service-card">
                     <h4>HIPAA for State Health Programs</h4>
@@ -1326,11 +1352,11 @@
         <div class="market-content">
             <div class="market-info">
                 <h3>Commercial Cybersecurity Advisory</h3>
-                <p class="lead">For businesses over $1M annual revenue operating in regulated environments. Compliance isn't overhead &mdash; it's competitive advantage. We make it efficient and sustainable.</p>
+                <p class="lead">For businesses over $1M annual revenue operating in regulated environments. Compliance isn't overhead. It's competitive advantage. We make it efficient and sustainable.</p>
                 <ul class="market-pain-points">
                     <li>
                         <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        Fractional vCISO retainers &mdash; executive security leadership on demand
+                        Fractional vCISO retainers, executive security leadership on demand
                     </li>
                     <li>
                         <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
@@ -1338,7 +1364,7 @@
                     </li>
                     <li>
                         <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        PCI DSS gap analysis for organizations processing payments
+                        PCI DSS v4.0.1 gap analysis, including the 51 requirements that became mandatory in March 2025
                     </li>
                     <li>
                         <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
@@ -1346,7 +1372,7 @@
                     </li>
                     <li>
                         <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        Compliance as competitive advantage &mdash; win contracts, reduce liability, build trust
+                        Compliance as competitive advantage: win contracts, reduce liability, build trust
                     </li>
                 </ul>
                 <div style="display:flex;gap:1rem;flex-wrap:wrap;align-items:center;">
@@ -1365,13 +1391,13 @@
                     <span class="tag tag-framework">SOC 2</span>
                 </div>
                 <div class="market-service-card">
-                    <h4>PCI DSS Compliance</h4>
+                    <h4>PCI DSS v4.0.1 Compliance</h4>
                     <p>Gap analysis and remediation planning for payment card industry data security standards.</p>
-                    <span class="tag tag-framework">PCI DSS</span>
+                    <span class="tag tag-framework">PCI DSS v4.0.1</span>
                 </div>
                 <div class="market-service-card">
                     <h4>AI Security &amp; Governance</h4>
-                    <p>Risk assessments, governance frameworks, and secure implementation for AI adoption in regulated industries.</p>
+                    <p>Risk assessments aligned to NIST AI RMF and ISO/IEC 42001, governance frameworks, LLM red teaming, and secure implementation for AI adoption in regulated industries.</p>
                     <span class="tag tag-framework">AI Governance</span>
                 </div>
             </div>
@@ -1389,16 +1415,17 @@
 
     <div class="services-grid">
         <div class="service-card featured">
-            <div class="card-icon green">
-                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span class="flag">Flagship Practice</span>
+            <div class="card-icon">
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
             </div>
-            <h3>HIPAA Security Risk Assessments</h3>
-            <p>Federally required annual assessments for every healthcare covered entity. Audit-ready evidence documentation for HHS OCR.</p>
+            <h3>AI Security &amp; Governance</h3>
+            <p>Secure AI adoption for organizations in regulated environments. We assess AI risk, build the governance program, and ship the automation ourselves.</p>
             <ul>
-                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> Annual SRA compliance (45 CFR 164.308)</li>
-                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> Gap identification &amp; remediation</li>
-                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> Policy &amp; procedure development</li>
-                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> OCR audit preparation</li>
+                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> AI risk assessments &amp; NIST AI RMF alignment</li>
+                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> Governance frameworks &amp; acceptable use policy</li>
+                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> LLM red teaming &amp; prompt injection testing</li>
+                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> AI-powered security automation &amp; evidence collection</li>
             </ul>
         </div>
 
@@ -1407,7 +1434,7 @@
                 <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
             <h3>NIST 800-171 &amp; DFARS Compliance</h3>
-            <p>Self-assessment, SPRS scoring, and CUI protection for defense contractors. No certification required &mdash; these obligations are already in your contract.</p>
+            <p>Self-assessment, SPRS scoring, and CUI protection for defense contractors. No certification required. These obligations are already in your contract.</p>
             <ul>
                 <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> 110-control self-assessment</li>
                 <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> Defensible SPRS score submission</li>
@@ -1434,27 +1461,27 @@
             <div class="card-icon">
                 <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
             </div>
-            <h3>Security Assessments</h3>
-            <p>Comprehensive evaluation across PCI DSS, NIST, SOC 2, and FedRAMP frameworks.</p>
+            <h3>HIPAA Security Risk Assessments</h3>
+            <p>Federally required annual assessments for every healthcare covered entity. Audit-ready evidence documentation for HHS OCR.</p>
             <ul>
-                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> PCI DSS gap analysis</li>
-                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> FedRAMP readiness</li>
-                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> SOC 2 preparation</li>
-                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> Security architecture review</li>
+                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> Annual SRA compliance (45 CFR 164.308)</li>
+                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> Gap identification &amp; remediation</li>
+                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> Policy &amp; procedure development</li>
+                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> OCR audit preparation</li>
             </ul>
         </div>
 
         <div class="service-card">
             <div class="card-icon">
-                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
             </div>
-            <h3>AI Security &amp; Governance</h3>
-            <p>Secure AI adoption aligned with emerging federal and industry requirements.</p>
+            <h3>Security Assessments</h3>
+            <p>Comprehensive evaluation across PCI DSS v4.0.1, NIST 800-53 Rev 5, NIST CSF 2.0, SOC 2, and FedRAMP.</p>
             <ul>
-                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> AI risk assessments</li>
-                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> Governance framework development</li>
-                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> Secure AI implementation</li>
-                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> AI supply chain security</li>
+                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> PCI DSS v4.0.1 gap analysis</li>
+                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> FedRAMP 20x readiness</li>
+                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> SOC 2 preparation</li>
+                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> Security architecture review</li>
             </ul>
         </div>
 
@@ -1502,14 +1529,14 @@
                 <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
             </div>
             <h3>21+ Years Security</h3>
-            <p>Deep expertise across HIPAA, NIST 800-171, NIST 800-53, PCI DSS, SOC 2, FedRAMP, FISMA, and risk management frameworks.</p>
+            <p>Deep expertise across HIPAA, NIST 800-171, NIST 800-53 Rev 5, NIST CSF 2.0, PCI DSS v4.0.1, SOC 2, FedRAMP 20x, FISMA, and risk management frameworks.</p>
         </div>
         <div class="why-card">
             <div class="card-icon">
                 <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
             </div>
             <h3>Builder, Not Just Auditor</h3>
-            <p>We build tools, automations, and evidence systems that make compliance sustainable &mdash; not a one-time exercise.</p>
+            <p>We build tools, automations, and evidence systems that make compliance sustainable, not a one-time exercise.</p>
         </div>
     </div>
 </section>
@@ -1564,7 +1591,7 @@
                     <span>Apr 14, 2026</span>
                 </div>
                 <h3>Florida Makers &amp; CMMC &mdash; The OT Blind Spot on Your Shop Floor</h3>
-                <p>Your CNC machines, PLCs, and IoT sensors are in scope. Most small manufacturers are not thinking about operational technology when they start a CMMC assessment &mdash; and it is the gap that kills timelines.</p>
+                <p>Your CNC machines, PLCs, and IoT sensors are in scope. Most small manufacturers are not thinking about operational technology when they start a CMMC assessment, and it is the gap that kills timelines.</p>
                 <div class="blog-card-tags">
                     <span>CMMC 2.0</span>
                     <span>OT Security</span>
@@ -1696,11 +1723,11 @@
         </div>
         <div class="footer-col">
             <h4>Services</h4>
-            <a href="#services">HIPAA SRA</a>
+            <a href="#services">AI Security &amp; Governance</a>
             <a href="#services">NIST 800-171 &amp; DFARS</a>
             <a href="#services">Fractional vCISO</a>
+            <a href="#services">HIPAA SRA</a>
             <a href="#services">Security Assessments</a>
-            <a href="#services">AI Governance</a>
             <a href="#services">Incident Response</a>
         </div>
         <div class="footer-col">
