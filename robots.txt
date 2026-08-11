@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://waypointca.com/sitemap.xml
