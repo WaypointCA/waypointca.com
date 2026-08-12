@@ -1,0 +1,22 @@
+{{ define "main" }}
+<section class="page-intro">
+    <div class="page-intro-inner">
+        <span class="eyebrow">Browse</span>
+        <h1>{{ .Title }}</h1>
+        <p>{{ len .Data.Terms }} topics across {{ len (where .Site.RegularPages "Section" "posts") }} posts.</p>
+    </div>
+</section>
+
+<div class="container" style="padding-top:2.5rem;">
+    <ul class="term-cloud">
+        {{ range .Data.Terms.ByCount }}
+        <li>
+            <a href="{{ .Page.Permalink }}" class="term-pill">
+                {{ .Page.Title }}<span class="term-count">{{ .Count }}</span>
+            </a>
+        </li>
+        {{ end }}
+    </ul>
+    <p class="back-link"><a href="{{ (site.GetPage "/posts").RelPermalink }}">← All posts</a></p>
+</div>
+{{ end }}

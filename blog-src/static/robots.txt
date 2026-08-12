@@ -1,0 +1,8 @@
+# Inert. robots.txt is only honoured at a host root, so this file has no
+# crawl effect at /blog/robots.txt. It exists so the 301 from the retired
+# blog.waypointca.com/robots.txt lands on a 200 rather than a 404, which
+# keeps the redirect rule a single expression with no special cases.
+User-agent: *
+Allow: /
+
+Sitemap: https://waypointca.com/sitemap.xml

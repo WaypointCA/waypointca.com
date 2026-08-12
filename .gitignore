@@ -6,3 +6,9 @@ capstatements/build/
 capstatements/__pycache__/
 
 .DS_Store
+
+# Build output assembled by .github/workflows/deploy.yml
+_site/
+blog-src/public/
+blog-src/resources/
+blog-src/.hugo_build.lock

@@ -1,0 +1,39 @@
+{{ define "main" }}
+{{ $posts := where .Site.RegularPages "Section" "posts" }}
+{{ $featured := index $posts 0 }}
+{{ $rest := after 1 $posts }}
+
+<section class="page-intro">
+    <div class="page-intro-inner">
+        <span class="eyebrow">Insights</span>
+        <h1>From the Field</h1>
+        <p>Practical guidance on compliance, security, and the tools we build to make both sustainable. Written for the people who have to implement it.</p>
+    </div>
+</section>
+
+{{ partial "market-filter.html" (dict "ctx" . "current" "") }}
+
+<div class="container">
+    {{ with $featured }}
+    <span class="section-label">Latest</span>
+    <a href="{{ .Permalink }}" class="featured">
+        <span class="flag">{{ with index .Params.categories 0 }}{{ . }}{{ else }}New{{ end }}</span>
+        <h2>{{ .Title }}</h2>
+        <div class="card-meta">
+            <span>{{ .Date.Format "January 2, 2006" }}</span>
+            {{ if .Site.Params.showReadingTime }}
+            <span>· {{ math.Round (div (countwords .Content) 200.0) }} min read</span>
+            {{ end }}
+        </div>
+        {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+    </a>
+    {{ end }}
+
+    {{ if $rest }}
+    <span class="section-label">More posts</span>
+    <div class="card-grid">
+        {{ range $rest }}{{ partial "post-card.html" . }}{{ end }}
+    </div>
+    {{ end }}
+</div>
+{{ end }}
