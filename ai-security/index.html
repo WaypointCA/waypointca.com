@@ -973,6 +973,17 @@
             .footer-bottom { flex-direction: column; text-align: center; }
             .top-bar { font-size: 0.65rem; padding: 0.4rem 0.5rem; }
         }
+
+        /* Grid helpers for this page. Inline grid-template-columns would win
+           over the responsive rules below, so column counts live here. */
+        .grid-2 { grid-template-columns: repeat(2, 1fr); }
+        .grid-3 { grid-template-columns: repeat(3, 1fr); }
+        @media (max-width: 1024px) {
+            .grid-3 { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 768px) {
+            .grid-2, .grid-3 { grid-template-columns: 1fr; }
+        }
     </style>
     <script type="application/ld+json">
     {
@@ -997,6 +1008,16 @@
       "audience": {
         "@type": "Audience",
         "audienceType": "Federal, defense, aerospace, healthcare, state government, and commercial organizations"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "AI Security and Assurance Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Governance and Assurance", "description": "AI risk assessments aligned to the NIST AI Risk Management Framework and its Generative AI Profile, governance programs, ISO/IEC 42001 readiness, EU AI Act readiness, and assurance cases." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Red Team and Evaluation", "description": "LLM and agent red teaming covering direct and indirect prompt injection, jailbreaks, guardrail evasion, agent containment testing, and evaluation harness builds mapped to OWASP and MITRE ATLAS." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Private AI Security Workshop", "description": "Private hands-on AI security workshops for security teams and AI builders, taught against realistic targets in a controlled environment." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fractional AI Security Leadership", "description": "Ongoing AI security leadership folded into a vCISO retainer." } }
+        ]
       }
     }
     </script>
@@ -1040,33 +1061,107 @@
 
 <section class="hero">
     <div class="hero-content" style="grid-template-columns:1fr;">
-        <div class="hero-text" style="max-width:820px;">
+        <div class="hero-text" style="max-width:880px;">
             <div class="hero-eyebrow">
                 <span class="dot" aria-hidden="true"></span>
                 Flagship Practice
             </div>
-            <h1>AI Security &amp;<br><span class="highlight">Governance</span></h1>
-            <p class="subtitle">Secure AI adoption for organizations in regulated environments. We assess AI risk, build the governance program, and ship the automation ourselves.</p>
+            <h1>AI Security and Assurance for the Systems You Are<br><span class="highlight">Trusting With the Mission</span></h1>
+            <p class="subtitle">Organizations are shipping large language models and AI agents into production faster than they can secure or govern them. Waypoint does both. We prove your AI is safe enough to defend in front of a regulator or a board, and we attack it the way an adversary would, before an adversary does.</p>
             <div class="hero-actions">
                 <a href="https://calendly.com/tech-waypointca/30min" class="btn-primary">
                     Book a Free Consultation
                     <svg aria-hidden="true" width="16" height="16" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg>
                 </a>
-                <a href="/#services" class="btn-outline">All Services</a>
+                <a href="#two-tracks" class="btn-outline">
+                    <svg aria-hidden="true" width="16" height="16" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 5v14m0 0-6-6m6 6 6-6"/></svg>
+                    See Our Approach
+                </a>
             </div>
         </div>
     </div>
 </section>
 
-<!-- CURRICULUM / PROOF BAND -->
-<section class="services-section" id="curriculum">
+<!-- THE PROBLEM -->
+<section class="services-section" id="the-problem" style="background:var(--white);">
     <div class="section-header">
-        <div class="section-label">Published Work</div>
-        <h2>We Built the Body of Knowledge</h2>
-        <p>Most firms claim AI security expertise. We authored the curriculum for it, published in full and free to read.</p>
+        <div class="section-label">The Problem</div>
+        <h2>Two Questions Every Organization Deploying AI Now Has to Answer</h2>
+        <p>Can you prove it is safe enough? And do you actually know whether it can be broken?</p>
+    </div>
+    <div style="max-width:820px;margin:0 auto;">
+        <div class="advisory-note">
+            Most vendors answer one. Waypoint answers both, because they are the same problem seen from two sides. The governance program that satisfies your auditor is only as honest as the red team that tested what it claims. We run both sides in-house, and we build the tooling that keeps them true after we leave.
+        </div>
+    </div>
+</section>
+
+<!-- TWO TRACKS -->
+<section class="services-section" id="two-tracks">
+    <div class="section-header">
+        <div class="section-label">Our Approach</div>
+        <h2>Two Tracks, Run In-House</h2>
+        <p>Engage either side on its own, or both together where the assurance argument has to survive the attack.</p>
+    </div>
+    <div class="services-grid grid-2" style="max-width:1000px;">
+        <div class="service-card">
+            <div class="card-icon">
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <h3>Track 1: AI Governance and Assurance</h3>
+            <p><strong>For regulated organizations adopting AI.</strong> Prove your AI is safe enough, in the language your auditor, your customers, and your board already speak. We assess the risk, build the program, and produce the evidence.</p>
+            <ul>
+                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> AI risk assessments aligned to the NIST AI Risk Management Framework and its Generative AI Profile</li>
+                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> Governance programs, acceptable use policy, and control frameworks</li>
+                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> ISO/IEC 42001 readiness, the first certifiable AI management system standard</li>
+                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> EU AI Act readiness for organizations in scope</li>
+                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> Assurance cases: a defensible argument that a system is safe enough for its use, not a checklist</li>
+                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> Evidence automation, so compliance is sustainable instead of a one-time scramble</li>
+            </ul>
+        </div>
+        <div class="service-card">
+            <div class="card-icon">
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#e8852d" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <h3>Track 2: AI Red Team and Evaluation</h3>
+            <p><strong>For security teams and the people shipping AI.</strong> Find out how it breaks on your terms, before an attacker finds out on theirs. Hands-on offensive testing of your LLM and agent systems, mapped to the frameworks the field actually uses.</p>
+            <ul>
+                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> LLM and agent red teaming: direct and indirect prompt injection, jailbreaks, guardrail evasion</li>
+                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> Data exfiltration and unauthorized action through tool-using agents</li>
+                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> Tool and agent containment and least-privilege testing for autonomous systems</li>
+                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> Evaluation harness builds: evaluation as a security control, not an accuracy metric</li>
+                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> Mapped to the OWASP Top 10 for LLM Applications, the OWASP Top 10 for Agentic Applications, and MITRE ATLAS</li>
+                <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16804a" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> Findings delivered as a defensible report your team can act on and reproduce</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- PRIVATE WORKSHOPS -->
+<section class="why-section" id="workshops">
+    <div class="section-header">
+        <div class="section-label">Private Workshops</div>
+        <h2>Train Your Team to Red-Team Their Own AI</h2>
+        <p>We deliver private, hands-on AI security workshops for security teams and AI builders. The same methodology we use on engagements, taught against realistic targets in a controlled environment, so the capability stays in-house after we leave.</p>
+    </div>
+    <div style="max-width:720px;margin:0 auto;text-align:center;position:relative;">
+        <p style="color:rgba(255,255,255,0.7);font-size:0.98rem;margin-bottom:1.75rem;">Half-day to multi-day, scoped to your stack and your team's level. Your people leave able to threat-model, red-team, and evaluate the LLM and agent systems you are already running.</p>
+        <a href="https://calendly.com/tech-waypointca/30min" class="btn-primary" style="color:var(--white);">
+            Ask About a Workshop
+            <svg aria-hidden="true" width="16" height="16" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </a>
+    </div>
+</section>
+
+<!-- WHY WAYPOINT / CURRICULUM PROOF BAND -->
+<section class="services-section" id="curriculum" style="background:var(--white);">
+    <div class="section-header">
+        <div class="section-label">Why Waypoint</div>
+        <h2>We Did Not Add AI to a Compliance Shop.<br>We Built the Field's Body of Knowledge.</h2>
+        <p>AI security is not a bullet we appended to a services list. Waypoint's founder authored a full doctoral-level curriculum for applied AI security and assurance, with the security discipline as its spine rather than an afterthought, grounded in the same frameworks we bring to your engagement.</p>
     </div>
 
-    <div style="max-width:900px;margin:0 auto;">
+<div style="max-width:900px;margin:0 auto;">
         <a href="/ai-security/curriculum/" class="service-card featured" style="display:block;text-decoration:none;color:inherit;margin-bottom:1.5rem;">
             <span class="flag">Pillar</span>
             <h3>Applied AI Security and Assurance: the full curriculum</h3>
@@ -1078,27 +1173,38 @@
             <p>The deepest artifact in the set. Fourteen weeks of prompt injection, jailbreaks, guardrail evasion, agent containment, and evaluation harnesses that function as security controls, with outcomes, assessment weighting, capstone rubric, and ethics policy published in full.</p>
         </a>
     </div>
-</section>
 
-<!-- ═══════════════════════════════════════════════════════════════
-     PLACEHOLDER: REMAINING BODY CONTENT
-     Cam is supplying the practice page copy separately. Replace this
-     section with it. The Curriculum band above is production content
-     and should be kept.
-     ═══════════════════════════════════════════════════════════════ -->
-<section class="services-section" id="ai-security-body" style="background:var(--white);">
-    <div class="section-header">
-        <div class="section-label">Placeholder</div>
-        <h2>Practice Content In Progress</h2>
-        <p>This section is a placeholder for the practice page copy. The curriculum above is live and complete.</p>
+    <div style="max-width:900px;margin:2.5rem auto 0;">
+        <h3 style="font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:1rem;">Credentials that back it</h3>
+        <div class="services-grid grid-2" style="gap:1rem;">
+            <div class="market-service-card"><p>CISSP, CEH, CHFI, with 21 plus years across federal, defense, healthcare, and commercial security</p></div>
+            <div class="market-service-card"><p>U.S. Navy veteran. SBA Certified Service-Disabled Veteran-Owned Small Business</p></div>
+            <div class="market-service-card"><p>Selected to speak on AI security at ISC2 Security Congress 2026</p></div>
+            <div class="market-service-card"><p>Builder, not just auditor: we ship the automation and the tooling ourselves, so what we build for you keeps working after the engagement ends</p></div>
+        </div>
     </div>
 </section>
-<!-- ═══════════ END PLACEHOLDER ═══════════ -->
+
+<!-- WHAT YOU CAN ENGAGE US FOR -->
+<section class="services-section" id="engagements">
+    <div class="section-header">
+        <div class="section-label">Engagements</div>
+        <h2>What You Can Engage Us For</h2>
+    </div>
+    <div class="services-grid grid-3" style="max-width:1100px;">
+        <div class="market-service-card"><h4>AI Risk Assessment</h4><p>Aligned to NIST AI RMF and ISO/IEC 42001.</p></div>
+        <div class="market-service-card"><h4>LLM and Agent Red Team Engagement</h4><p>Structured offensive testing against your live systems.</p></div>
+        <div class="market-service-card"><h4>Evaluation Harness Build</h4><p>Evaluation that operates as a security control.</p></div>
+        <div class="market-service-card"><h4>AI Governance Program and Acceptable Use Policy</h4><p>The program and the policy, built to be defended.</p></div>
+        <div class="market-service-card"><h4>Private AI Security Workshop</h4><p>Hands-on training scoped to your team and stack.</p></div>
+        <div class="market-service-card"><h4>Fractional AI Security Leadership</h4><p>Folded into a vCISO retainer.</p></div>
+    </div>
+</section>
 
 <section class="cta-section" id="contact">
     <div class="cta-content">
-        <h2>Adopting AI in a<br>Regulated Environment?</h2>
-        <p>Schedule a free 30-minute consultation to discuss your AI governance requirements, risk posture, and timeline.</p>
+        <h2>Deploying AI Into a Controlled Environment?<br>Let's Make Sure It Holds.</h2>
+        <p>Schedule a free 30-minute consultation. We will talk through what you are shipping, where the risk actually sits, and whether you need the governance side, the offensive side, or both.</p>
         <div class="cta-actions">
             <a href="https://calendly.com/tech-waypointca/30min" class="btn-primary">
                 Book Your Free Consultation
