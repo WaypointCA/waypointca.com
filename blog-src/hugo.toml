@@ -1,0 +1,58 @@
+baseURL = "https://waypointca.com/blog/"
+languageCode = "en-us"
+
+# Toolchain pin. CI and local must agree; Hugo refuses to build outside this
+# range, which is how the 0.124-vs-0.155 drift gets caught at build time.
+[module]
+  [module.hugoVersion]
+    min = "0.155.0"
+    max = "0.156.0"
+title = "Waypoint Compliance Advisory | Blog"
+
+[params]
+  author = "Cameron Hopkin"
+  description = "Insights on cybersecurity, AI security, and federal compliance from Waypoint Compliance Advisory."
+  company = "Waypoint Compliance Advisory LLC"
+  
+  # Social links
+  linkedin = "https://www.linkedin.com/company/waypointca"
+  github = "https://github.com/WaypointCA"
+
+  # Site features
+  showReadingTime = true
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    name = "Topics"
+    url = "/tags/"
+    weight = 3
+  [[menu.main]]
+    name = "Main Site"
+    url = "https://waypointca.com/"
+    weight = 4
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    style = "monokai"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
