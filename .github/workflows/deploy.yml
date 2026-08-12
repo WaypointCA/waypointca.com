@@ -47,6 +47,13 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      - name: Generate curriculum pages
+        # Rendered from curriculum/content.py so the eight pages share one
+        # shell and cannot drift from index.html's design tokens, nav, or
+        # footer. Also enforces the no-em-dash house style and fails on
+        # violation.
+        run: python3 curriculum/build.py
+
       - name: Assemble static root
         # Everything at the repo root ships as-is: index.html, 404.html,
         # CNAME, robots.txt, sitemaps, favicon, assets/ (capability statement
@@ -58,6 +65,7 @@ jobs:
             --exclude '.git' \
             --exclude '.github' \
             --exclude 'blog-src' \
+            --exclude '/curriculum' \
             --exclude '_site' \
             --exclude '.claude' \
             --exclude '.gitignore'
@@ -84,6 +92,8 @@ jobs:
             "sitemap-main.xml"
             "favicon.ico"
             "ai-security/index.html"
+            "ai-security/curriculum/index.html"
+            "ai-security/curriculum/llm-agent-security-red-teaming/index.html"
             "assets/waypoint-og.png"
             "assets/favicon.ico"
             "assets/favicon-16x16.png"

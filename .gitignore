@@ -12,3 +12,4 @@ _site/
 blog-src/public/
 blog-src/resources/
 blog-src/.hugo_build.lock
+curriculum/__pycache__/
