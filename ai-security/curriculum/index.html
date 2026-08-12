@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Security &amp; Governance | Waypoint Compliance Advisory</title>
-    <meta name="description" content="AI security and governance for regulated environments. NIST AI RMF alignment, governance frameworks, LLM red teaming and prompt injection testing, and AI-powered security automation. SBA Certified SDVOSB.">
-    <link rel="canonical" href="https://waypointca.com/ai-security/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="AI Security &amp; Governance | Waypoint Compliance Advisory">
-    <meta property="og:description" content="AI security and governance for regulated environments. NIST AI RMF alignment, governance frameworks, LLM red teaming, and AI-powered security automation.">
-    <meta property="og:url" content="https://waypointca.com/ai-security/">
+    <title>Applied AI Security and Assurance Curriculum | Waypoint Compliance Advisory</title>
+    <meta name="description" content="A doctoral-level curriculum in applied AI security and assurance, authored by Cameron Hopkin, CISSP. Seven cores spanning adversarial machine learning, LLM and agent red teaming, secure AI engineering, and AI governance.">
+    <link rel="canonical" href="https://waypointca.com/ai-security/curriculum/">
+    <meta name="author" content="Cameron Hopkin">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Applied AI Security and Assurance Curriculum | Waypoint Compliance Advisory">
+    <meta property="og:description" content="A doctoral-level curriculum in applied AI security and assurance, authored by Cameron Hopkin, CISSP. Seven cores spanning adversarial machine learning, LLM and agent red teaming, secure AI engineering, and AI governance.">
+    <meta property="og:url" content="https://waypointca.com/ai-security/curriculum/">
     <meta property="og:site_name" content="Waypoint Compliance Advisory">
     <meta property="og:image" content="https://waypointca.com/assets/waypoint-og.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="AI Security &amp; Governance | Waypoint Compliance Advisory">
-    <meta name="twitter:description" content="AI security and governance for regulated environments. NIST AI RMF alignment, LLM red teaming, and AI-powered security automation.">
+    <meta name="twitter:title" content="Applied AI Security and Assurance Curriculum | Waypoint Compliance Advisory">
+    <meta name="twitter:description" content="A doctoral-level curriculum in applied AI security and assurance, authored by Cameron Hopkin, CISSP. Seven cores spanning adversarial machine learning, LLM and agent red teaming, secure AI engineering, and AI governance.">
     <meta name="twitter:image" content="https://waypointca.com/assets/waypoint-og.png">
     <link rel="icon" href="/assets/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
@@ -973,32 +974,101 @@
             .footer-bottom { flex-direction: column; text-align: center; }
             .top-bar { font-size: 0.65rem; padding: 0.4rem 0.5rem; }
         }
-    </style>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "AI Security and Governance",
-      "serviceType": "AI Security and Governance Advisory",
-      "url": "https://waypointca.com/ai-security/",
-      "description": "AI security and governance for organizations operating in regulated environments, including NIST AI RMF alignment, governance framework development, LLM red teaming and prompt injection testing, and AI-powered security automation.",
-      "provider": {
-        "@type": "ProfessionalService",
-        "name": "Waypoint Compliance Advisory, LLC",
-        "url": "https://waypointca.com",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "DeLand",
-          "addressRegion": "FL",
-          "addressCountry": "US"
+    
+        /* ── Curriculum ───────────────────────────────── */
+        .crumbs { background: var(--off-white); border-bottom: 1px solid var(--border);
+                  padding: 0.7rem 2rem; font-size: 0.82rem; }
+        .crumbs-inner { max-width: 1200px; margin: 0 auto; color: var(--text-muted); }
+        .crumbs a { color: var(--text-muted); text-decoration: none; }
+        .crumbs a:hover { color: var(--accent); text-decoration: underline; }
+        .crumbs .sep { margin: 0 0.45rem; opacity: 0.5; }
+        .crumbs [aria-current] { color: var(--navy); font-weight: 600; }
+
+        .doc { max-width: 820px; margin: 0 auto; padding: 3rem 2rem 1rem; }
+        .doc h2 { font-size: 1.55rem; font-weight: 800; color: var(--navy);
+                  letter-spacing: -0.4px; margin: 2.75rem 0 1rem; }
+        .doc h2:first-child { margin-top: 0; }
+        .doc h3 { font-size: 1.12rem; font-weight: 700; color: var(--navy); margin: 1.9rem 0 0.6rem; }
+        .doc p { margin-bottom: 1.15rem; line-height: 1.75; }
+        .doc ul, .doc ol { margin: 0 0 1.35rem 1.35rem; }
+        .doc li { margin-bottom: 0.55rem; line-height: 1.7; }
+        .doc a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+        .doc a:hover { color: var(--accent-hover); }
+        .doc code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.88em;
+                    background: var(--light-bg); padding: 0.12rem 0.35rem; border-radius: 4px;
+                    color: var(--navy); }
+        .doc pre { background: var(--navy); color: #e6edf3; padding: 1.1rem 1.3rem;
+                   border-radius: 8px; overflow-x: auto; margin: 0 0 1.5rem; font-size: 0.84rem;
+                   line-height: 1.6; }
+        .doc pre code { background: none; padding: 0; color: inherit; }
+
+        .kicker { display: inline-block; font-size: 0.72rem; font-weight: 700;
+                  text-transform: uppercase; letter-spacing: 1.4px; color: var(--accent);
+                  margin-bottom: 0.6rem; }
+        .lede { font-size: 1.12rem; color: var(--text-body); line-height: 1.7;
+                border-left: 3px solid var(--accent); padding-left: 1.1rem; margin-bottom: 2rem; }
+        .note { background: var(--off-white); border-left: 3px solid var(--gold);
+                border-radius: 0 8px 8px 0; padding: 1rem 1.25rem; margin-bottom: 2rem;
+                font-size: 0.9rem; line-height: 1.65; }
+
+        .tbl { width: 100%; border-collapse: collapse; margin: 0 0 1.75rem; font-size: 0.9rem;
+               display: block; overflow-x: auto; }
+        .tbl th, .tbl td { border: 1px solid var(--border); padding: 0.6rem 0.8rem; text-align: left; }
+        .tbl th { background: var(--light-bg); color: var(--navy); font-weight: 700; }
+        .tbl td:first-child, .tbl th:first-child { white-space: nowrap; }
+        .tbl tr.total td { font-weight: 700; color: var(--navy); background: var(--off-white); }
+
+        .core-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.1rem;
+                     margin: 0 0 1.5rem; }
+        .core-card { display: block; background: var(--white); border: 1px solid var(--border);
+                     border-radius: 10px; padding: 1.15rem 1.3rem; text-decoration: none;
+                     color: inherit; transition: all 0.2s; }
+        .core-card:hover { border-color: var(--accent); box-shadow: 0 3px 14px rgba(0,0,0,0.05);
+                           transform: translateY(-2px); }
+        .core-card .c-code { font-size: 0.7rem; font-weight: 700; letter-spacing: 1px;
+                             text-transform: uppercase; color: var(--accent); }
+        .core-card .c-title { font-size: 1rem; font-weight: 700; color: var(--navy);
+                              margin: 0.3rem 0 0.35rem; line-height: 1.35; }
+        .core-card .c-desc { font-size: 0.85rem; color: var(--text-muted); line-height: 1.55; }
+        .core-card .c-flag { display: inline-block; font-size: 0.63rem; font-weight: 700;
+                             text-transform: uppercase; letter-spacing: 0.6px; padding: 0.12rem 0.45rem;
+                             border-radius: 3px; background: var(--accent-light); color: var(--accent);
+                             margin-left: 0.4rem; vertical-align: middle; }
+
+        .weekrow { border-left: 2px solid var(--border); padding-left: 1.1rem; margin-bottom: 1.2rem; }
+        .weekrow .wk { font-weight: 700; color: var(--navy); font-size: 0.95rem; }
+        .weekrow .wt { font-weight: 600; color: var(--text-dark); }
+        .weekrow .lab { display: block; margin-top: 0.3rem; font-size: 0.85rem;
+                        color: var(--accent); font-weight: 600; }
+
+        .refs { font-size: 0.86rem; }
+        .refs li { margin-bottom: 0.75rem; word-break: break-word; }
+
+        .pager { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 3rem 0 0;
+                 padding-top: 1.75rem; border-top: 1px solid var(--border); }
+        .pager a { display: block; text-decoration: none; color: inherit; background: var(--white);
+                   border: 1px solid var(--border); border-radius: 10px; padding: 0.95rem 1.15rem;
+                   transition: all 0.2s; }
+        .pager a:hover { border-color: var(--accent); }
+        .pager .dir { display: block; font-size: 0.68rem; font-weight: 700; text-transform: uppercase;
+                      letter-spacing: 1px; color: var(--text-muted); margin-bottom: 0.3rem; }
+        .pager .t { font-size: 0.9rem; font-weight: 600; color: var(--navy); line-height: 1.35; }
+        .pager .next { text-align: right; }
+
+        @media (max-width: 768px) {
+            .doc { padding: 2rem 1.25rem 1rem; }
+            .doc h2 { font-size: 1.3rem; }
+            .core-grid { grid-template-columns: 1fr; }
+            .pager { grid-template-columns: 1fr; }
+            .pager .next { text-align: left; }
+            .crumbs { padding: 0.7rem 1.25rem; font-size: 0.76rem; }
         }
-      },
-      "areaServed": { "@type": "Country", "name": "United States" },
-      "audience": {
-        "@type": "Audience",
-        "audienceType": "Federal, defense, aerospace, healthcare, state government, and commercial organizations"
-      }
-    }
+</style>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"EducationalOccupationalProgram","name":"Applied AI Security and Assurance Curriculum","description":"A doctoral-level curriculum in applied AI security and assurance, authored by Cameron Hopkin, CISSP. Seven cores spanning adversarial machine learning, LLM and agent red teaming, secure AI engineering, and AI governance.","url":"https://waypointca.com/ai-security/curriculum/","programType":"Doctoral-level curriculum","educationalCredentialAwarded":"None. Published as a reference body of knowledge.","occupationalCategory":["AI Red Team Analyst","Adversarial Machine Learning Researcher","Machine Learning Security Architect","AI Governance and Assurance Lead"],"author":{"@type":"Person","name":"Cameron Hopkin","url":"https://waypointca.com/#about"},"provider":{"@type":"Organization","name":"Waypoint Compliance Advisory, LLC","url":"https://waypointca.com"},"hasCourse":[{"@type":"Course","name":"Mathematical and Statistical Foundations for AI","url":"https://waypointca.com/ai-security/curriculum/mathematical-foundations-for-ai/","provider":{"@type":"Organization","name":"Waypoint Compliance Advisory, LLC","url":"https://waypointca.com"}},{"@type":"Course","name":"Modern Deep Learning and Representation","url":"https://waypointca.com/ai-security/curriculum/modern-deep-learning/","provider":{"@type":"Organization","name":"Waypoint Compliance Advisory, LLC","url":"https://waypointca.com"}},{"@type":"Course","name":"Language Models, Retrieval, and Agents","url":"https://waypointca.com/ai-security/curriculum/language-models-retrieval-agents/","provider":{"@type":"Organization","name":"Waypoint Compliance Advisory, LLC","url":"https://waypointca.com"}},{"@type":"Course","name":"Adversarial Machine Learning and Model Robustness","url":"https://waypointca.com/ai-security/curriculum/adversarial-machine-learning/","provider":{"@type":"Organization","name":"Waypoint Compliance Advisory, LLC","url":"https://waypointca.com"}},{"@type":"Course","name":"LLM and Agent Security: Red Teaming and Evaluation","url":"https://waypointca.com/ai-security/curriculum/llm-agent-security-red-teaming/","provider":{"@type":"Organization","name":"Waypoint Compliance Advisory, LLC","url":"https://waypointca.com"}},{"@type":"Course","name":"Secure AI Engineering: MLOps, LLMOps, and Supply Chain","url":"https://waypointca.com/ai-security/curriculum/secure-ai-engineering-mlops/","provider":{"@type":"Organization","name":"Waypoint Compliance Advisory, LLC","url":"https://waypointca.com"}},{"@type":"Course","name":"AI Governance, Assurance, and Risk","url":"https://waypointca.com/ai-security/curriculum/ai-governance-assurance-risk/","provider":{"@type":"Organization","name":"Waypoint Compliance Advisory, LLC","url":"https://waypointca.com"}}]}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://waypointca.com/"},{"@type":"ListItem","position":2,"name":"AI Security","item":"https://waypointca.com/ai-security/"},{"@type":"ListItem","position":3,"name":"Curriculum","item":"https://waypointca.com/ai-security/curriculum/"}]}
     </script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YKWY9GBXCT"></script>
@@ -1022,7 +1092,7 @@
     <a href="/" class="logo">Waypoint<span>CA</span></a>
     <ul class="nav-links">
         <li><a href="/#markets">Markets</a></li>
-        <li><a href="/ai-security/" aria-current="page">AI Security</a></li>
+        <li><a href="/ai-security/">AI Security</a></li>
         <li><a href="/#services">Services</a></li>
         <li><a href="/#about">About</a></li>
         <li><a href="/#credentials">Credentials</a></li>
@@ -1037,80 +1107,59 @@
 
 
 <main id="main-content">
-
 <section class="hero">
     <div class="hero-content" style="grid-template-columns:1fr;">
-        <div class="hero-text" style="max-width:820px;">
-            <div class="hero-eyebrow">
-                <span class="dot" aria-hidden="true"></span>
-                Flagship Practice
-            </div>
-            <h1>AI Security &amp;<br><span class="highlight">Governance</span></h1>
-            <p class="subtitle">Secure AI adoption for organizations in regulated environments. We assess AI risk, build the governance program, and ship the automation ourselves.</p>
-            <div class="hero-actions">
-                <a href="https://calendly.com/tech-waypointca/30min" class="btn-primary">
-                    Book a Free Consultation
-                    <svg aria-hidden="true" width="16" height="16" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg>
-                </a>
-                <a href="/#services" class="btn-outline">All Services</a>
-            </div>
+        <div class="hero-text" style="max-width:860px;">
+            <div class="hero-eyebrow"><span class="dot" aria-hidden="true"></span>Authored Curriculum</div>
+            <h1>Applied AI Security<br><span class="highlight">and Assurance</span></h1>
+            <p class="subtitle">A curriculum for people who will be responsible for AI systems when they fail, not just when they demo.</p>
         </div>
     </div>
 </section>
 
-<!-- CURRICULUM / PROOF BAND -->
-<section class="services-section" id="curriculum">
-    <div class="section-header">
-        <div class="section-label">Published Work</div>
-        <h2>We Built the Body of Knowledge</h2>
-        <p>Most firms claim AI security expertise. We authored the curriculum for it, published in full and free to read.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><div class="crumbs-inner"><a href="/">Home</a><span class="sep">/</span><a href="/ai-security/">AI Security</a><span class="sep">/</span><span aria-current="page">Curriculum</span></div></nav>
+
+<div class="doc">
+    <div class="note">
+        <strong>What this is and is not.</strong> This curriculum was authored by
+        Cameron Hopkin, CISSP, CEH, CHFI, and is published as a body of knowledge and a
+        professional reference. It is not an accredited program, and Waypoint Compliance Advisory
+        does not offer admission, enrollment, or a degree. "Doctoral-level" describes the rigor of
+        the material, not a credential available here.
     </div>
 
-    <div style="max-width:900px;margin:0 auto;">
-        <a href="/ai-security/curriculum/" class="service-card featured" style="display:block;text-decoration:none;color:inherit;margin-bottom:1.5rem;">
-            <span class="flag">Pillar</span>
-            <h3>Applied AI Security and Assurance: the full curriculum</h3>
-            <p>A doctoral-level curriculum authored by Cameron Hopkin, CISSP. Seven cores spanning mathematical foundations through adversarial machine learning, LLM and agent red teaming, secure AI engineering, and AI governance. Published as a reference, with the verified market gap and citations.</p>
-        </a>
+    <h2>What this is</h2><p>This is a complete doctoral-level curriculum in applied AI security and assurance, authored by Cameron Hopkin. It is published here as a body of knowledge and a reference, not as a program you can enroll in. Waypoint Compliance Advisory does not grant degrees. The structure, sequencing, and credit scope are included because they are the shape of the argument: they show what a serious treatment of this field actually requires.</p><p>It is built with AI security and assurance as the spine rather than a bolt-on. Standard machine learning content is present but demoted to foundation. The intent is to describe what it takes to produce someone who can secure, red-team, evaluate, govern, and assure AI systems at a research level, and defend original applied work in that area.</p><h2>Who it is written for</h2><p>Mid-to-senior practitioners: security engineers, machine learning engineers, governance and assurance leads, and technical managers who already ship or govern systems and want to do defensible work on making them trustworthy. It assumes prior programming and a security or machine learning foundation. Because the orientation is applied, a live problem from your own work is an asset rather than a distraction.</p><h2>What a graduate of this curriculum can do</h2><p>Someone who works through this material end to end can:</p><ol><li>Model the threat surface of an AI system end to end and design controls for it.</li><li>Build and run adversarial evaluations and red-team programs as security controls, not afterthoughts.</li><li>Engineer AI pipelines with provenance, integrity, and supply-chain guarantees.</li><li>Construct and defend an assurance case that a given system is safe and secure enough for its use.</li><li>Situate technical work inside real governance and risk frameworks, including the NIST AI Risk Management Framework and relevant DoD and federal guidance.</li><li>Produce original, publishable applied research others can adopt.</li></ol>
 
-        <a href="/ai-security/curriculum/llm-agent-security-red-teaming/" class="service-card" style="display:block;text-decoration:none;color:inherit;">
-            <h3>Core 5: LLM and Agent Security, the full syllabus</h3>
-            <p>The deepest artifact in the set. Fourteen weeks of prompt injection, jailbreaks, guardrail evasion, agent containment, and evaluation harnesses that function as security controls, with outcomes, assessment weighting, capstone rubric, and ethics policy published in full.</p>
-        </a>
+    <h2>The verified gap this addresses</h2>
+    <p>The case for building this is not a hunch. It is what the landscape looks like when you check it.</p><p><strong>AI security exists in higher education, but as a bolt-on rather than a spine.</strong> Independent analysis of accredited cybersecurity doctorates treats AI and machine learning security as one of several specialized seminars that vary by program and faculty expertise, alongside forensics and cryptography <a href="#ref-1">[1]</a>. It is a topic inside a degree, not the degree.</p><p><strong>Where AI security is taught in depth, it stops at the master's level, and even there it is explicitly shallow on research skills.</strong> Nova Southeastern's M.S. in Artificial Intelligence Cybersecurity carries NSA validation <a href="#ref-2">[2]</a>, and comparable concentrations exist elsewhere. But a 2026 review of these programs states plainly that the AI coursework provides practical literacy, enough to evaluate vendor tools and understand adversarial risk, without the depth required for model development or red-team AI research roles <a href="#ref-3">[3]</a>. That missing depth is exactly what doctoral-level work is for.</p><p><strong>The demand signal is real.</strong> Reviews of the field describe rising 2026 demand from mid-career professionals for exactly these research-adjacent roles: adversarial machine learning researcher, AI red team analyst, and machine learning security architect <a href="#ref-1">[1]</a><a href="#ref-3">[3]</a>.</p>
+
+    <h2>The security spine</h2>
+    <p>Everything before Core 4 exists to make Cores 4 through 7 possible. Someone who works through this curriculum is not primarily a model builder. They are the person an organization puts in the room when an AI system has to be trusted with something that matters.</p>
+
+    <h2>The seven cores</h2>
+    <div class="core-grid"><a href="/ai-security/curriculum/mathematical-foundations-for-ai/" class="core-card"><span class="c-code">Core 1</span><div class="c-title">Mathematical and Statistical Foundations for AI</div><div class="c-desc">The honest mathematical foundation, modernized and pointed at what breaks in real systems. Linear algebra, matrix decompositions, optimization,.</div></a><a href="/ai-security/curriculum/modern-deep-learning/" class="core-card"><span class="c-code">Core 2</span><div class="c-title">Modern Deep Learning and Representation</div><div class="c-desc">Replaces the dated bag-of-words and GAN-centric approach with the actual modern stack: transformers, the Hugging Face and PyTorch ecosystem, and.</div></a><a href="/ai-security/curriculum/language-models-retrieval-agents/" class="core-card"><span class="c-code">Core 3</span><div class="c-title">Language Models, Retrieval, and Agents</div><div class="c-desc">Foundations through operations for reliable LLM applications, taught so the reliability question stays live throughout rather than being deferred to.</div></a><a href="/ai-security/curriculum/adversarial-machine-learning/" class="core-card"><span class="c-code">Core 4</span><span class="c-flag">Security spine</span><div class="c-title">Adversarial Machine Learning and Model Robustness</div><div class="c-desc">A rigorous treatment of the machine learning attack surface and the honest limits of defenses. This is where the curriculum stops being a machine.</div></a><a href="/ai-security/curriculum/llm-agent-security-red-teaming/" class="core-card"><span class="c-code">Core 5</span><span class="c-flag">Flagship</span><div class="c-title">LLM and Agent Security: Red Teaming and Evaluation</div><div class="c-desc">The flagship course, and the one that defines the curriculum. It treats large language model and agent systems as targets and teaches how to attack,.</div></a><a href="/ai-security/curriculum/secure-ai-engineering-mlops/" class="core-card"><span class="c-code">Core 6</span><span class="c-flag">Security spine</span><div class="c-title">Secure AI Engineering: MLOps, LLMOps, and Supply Chain</div><div class="c-desc">Real production security for AI systems. This is also where the curriculum is honest about tooling: PyTorch is the research and training standard,.</div></a><a href="/ai-security/curriculum/ai-governance-assurance-risk/" class="core-card"><span class="c-code">Core 7</span><span class="c-flag">Security spine</span><div class="c-title">AI Governance, Assurance, and Risk</div><div class="c-desc">Ties the technical spine to policy, compliance, and assurance. This is where alignment and post-training are treated as governance problems, and.</div></a></div>
+
+    <h2>Scope and structure</h2>
+    <p>The credit scope is included because it shows what a serious treatment of this field
+    requires. Cores 4 through 7 are the security spine.</p>
+    <table class="tbl">
+        <thead><tr><th>Code</th><th>Course</th><th>Credits</th></tr></thead>
+        <tbody><tr><td>Core 1</td><td><a href="/ai-security/curriculum/mathematical-foundations-for-ai/">Mathematical and Statistical Foundations for AI</a></td><td>4</td></tr><tr><td>Core 2</td><td><a href="/ai-security/curriculum/modern-deep-learning/">Modern Deep Learning and Representation</a></td><td>4</td></tr><tr><td>Core 3</td><td><a href="/ai-security/curriculum/language-models-retrieval-agents/">Language Models, Retrieval, and Agents</a></td><td>4</td></tr><tr><td>Core 4</td><td><a href="/ai-security/curriculum/adversarial-machine-learning/">Adversarial Machine Learning and Model Robustness</a></td><td>4</td></tr><tr><td>Core 5</td><td><a href="/ai-security/curriculum/llm-agent-security-red-teaming/">LLM and Agent Security: Red Teaming and Evaluation</a></td><td>4</td></tr><tr><td>Core 6</td><td><a href="/ai-security/curriculum/secure-ai-engineering-mlops/">Secure AI Engineering: MLOps, LLMOps, and Supply Chain</a></td><td>4</td></tr><tr><td>Core 7</td><td><a href="/ai-security/curriculum/ai-governance-assurance-risk/">AI Governance, Assurance, and Risk</a></td><td>4</td></tr><tr><td>Praxis 1</td><td>Research Methods and Praxis Proposal</td><td>4</td></tr><tr><td>Praxis 2</td><td>Praxis Research and Defense</td><td>24</td></tr><tr class="total"><td colspan="2">Total</td><td>52</td></tr></tbody>
+    </table>
+    <p><strong>Sequencing.</strong> Cores 1 to 3 form a foundation block taken first, in order. Cores 4 to 7 are the security spine. Cores 4 and 5 are sequential, because robustness comes before agent red teaming, while 6 and 7 can run in parallel for someone who already has the foundation. The praxis proposal runs alongside the later cores so it grows out of the work rather than starting cold. The praxis research follows.</p>
+
+    <h2>Praxis sequence</h2>
+    <h3>Praxis 1: Research Methods and Praxis Proposal</h3><p>Research methods for an applied engineering doctorate, aimed at turning a live problem into a defensible research contribution. Covers research methods and design, problem formulation and literature positioning, framing an original contribution, and proposal development and defense. The output is a defended praxis proposal, ideally grown from a signature lab in Core 4, 5, 6, or 7.</p><h3>Praxis 2: Praxis Research and Defense</h3><p>Original applied research producing a defensible, adoptable contribution. The expected shape is a security or assurance method, tool, or evaluation methodology that others in the field can use, with the rigor to defend it. The output is a completed praxis and successful defense.</p>
+
+    <h2>References</h2>
+    <ol class="refs"><li id="ref-1">[1] Cybersecurity Guide. "PhD in Cybersecurity: Programs, Requirements, and Career Outcomes."<br><a href="https://cybersecurityguide.org/programs/phd-in-cybersecurity/" rel="noopener">https://cybersecurityguide.org/programs/phd-in-cybersecurity/</a></li><li id="ref-2">[2] Nova Southeastern University, College of Computing, AI, and Cybersecurity. "Doctoral Degrees."<br><a href="https://computing.nova.edu/degrees/doctoral/index.html" rel="noopener">https://computing.nova.edu/degrees/doctoral/index.html</a></li><li id="ref-3">[3] Cybersecurity Guide. "AI Cybersecurity Master's Degree Programs: 2026 Guide and Comparison."<br><a href="https://cybersecurityguide.org/programs/ai-cybersecurity-masters-degree/" rel="noopener">https://cybersecurityguide.org/programs/ai-cybersecurity-masters-degree/</a></li><li id="ref-4">[4] Second Talent. "PyTorch vs TensorFlow: Usage, Popularity and Performance in 2026."<br><a href="https://www.secondtalent.com/resources/pytorch-vs-tensorflow-usage-popularity-and-performance/" rel="noopener">https://www.secondtalent.com/resources/pytorch-vs-tensorflow-usage-popularity-and-performance/</a></li><li id="ref-5">[5] LazyProgrammer. "PyTorch vs. TensorFlow: Full Overview 2025 Guide."<br><a href="https://lazyprogrammer.me/pytorch-vs-tensorflow/" rel="noopener">https://lazyprogrammer.me/pytorch-vs-tensorflow/</a></li><li id="ref-6">[6] Palo Alto Networks. "Securing AI's Front Lines" (MITRE ATLAS, NIST AI RMF Govern, Map, Measure, Manage).<br><a href="https://www.paloaltonetworks.com/resources/whitepapers/securing-ai-s-front-lines" rel="noopener">https://www.paloaltonetworks.com/resources/whitepapers/securing-ai-s-front-lines</a></li><li id="ref-7">[7] OWASP GenAI Security Project. "OWASP Top 10 for LLM Applications 2025."<br><a href="https://owasp.org/www-project-top-10-for-large-language-model-applications/" rel="noopener">https://owasp.org/www-project-top-10-for-large-language-model-applications/</a></li><li id="ref-8">[8] Articsledge. "OWASP Top 10 for LLM Applications (Complete Guide)" (publication date, v2.0).<br><a href="https://www.articsledge.com/post/owasp-top-10-for-llm-applications" rel="noopener">https://www.articsledge.com/post/owasp-top-10-for-llm-applications</a></li><li id="ref-9">[9] Vectra AI. "What Is GenAI Security? Risks, Threats and Best Practices" (OWASP Agentic 2026, ISO/IEC 42001, EU AI Act).<br><a href="https://www.vectra.ai/topics/genai-security" rel="noopener">https://www.vectra.ai/topics/genai-security</a></li></ol>
+    <p><em>Sources current as of August 2026. Framework references (OWASP, MITRE ATLAS, NIST AI RMF, ISO/IEC 42001, EU AI Act) should be read against their latest published editions.</em></p>
+
+    <div class="pager">
+        <a href="/ai-security/"><span class="dir">Back to</span><span class="t">AI Security Practice</span></a>
+        <a href="/ai-security/curriculum/mathematical-foundations-for-ai/" class="next"><span class="dir">Start with</span><span class="t">Core 1: Mathematical and Statistical Foundations for AI</span></a>
     </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     PLACEHOLDER: REMAINING BODY CONTENT
-     Cam is supplying the practice page copy separately. Replace this
-     section with it. The Curriculum band above is production content
-     and should be kept.
-     ═══════════════════════════════════════════════════════════════ -->
-<section class="services-section" id="ai-security-body" style="background:var(--white);">
-    <div class="section-header">
-        <div class="section-label">Placeholder</div>
-        <h2>Practice Content In Progress</h2>
-        <p>This section is a placeholder for the practice page copy. The curriculum above is live and complete.</p>
-    </div>
-</section>
-<!-- ═══════════ END PLACEHOLDER ═══════════ -->
-
-<section class="cta-section" id="contact">
-    <div class="cta-content">
-        <h2>Adopting AI in a<br>Regulated Environment?</h2>
-        <p>Schedule a free 30-minute consultation to discuss your AI governance requirements, risk posture, and timeline.</p>
-        <div class="cta-actions">
-            <a href="https://calendly.com/tech-waypointca/30min" class="btn-primary">
-                Book Your Free Consultation
-                <svg aria-hidden="true" width="16" height="16" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg>
-            </a>
-        </div>
-        <div class="cta-email">
-            or email directly at <a href="mailto:cameron@waypointca.com">cameron@waypointca.com</a>
-        </div>
-    </div>
-</section>
-
+</div>
 </main>
 
 <!-- FOOTER -->
@@ -1122,7 +1171,7 @@
         </div>
         <div class="footer-col">
             <h4>Services</h4>
-            <a href="/#services">AI Security &amp; Governance</a>
+            <a href="/ai-security/">AI Security &amp; Governance</a>
             <a href="/#services">NIST 800-171 &amp; DFARS</a>
             <a href="/#services">Fractional vCISO</a>
             <a href="/#services">HIPAA SRA</a>
@@ -1162,10 +1211,7 @@
     </div>
 </footer>
 
-<script>
-    // Market tab handlers live on the home page; this page has no tabs.
-    function switchMarket(m) { window.location.href = '/#markets'; }
-</script>
+<script>function switchMarket(m) { window.location.href = '/#markets'; }</script>
 
 </body>
 </html>
