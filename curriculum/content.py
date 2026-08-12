@@ -34,8 +34,7 @@ PILLAR = {
     "page_title": "Applied AI Security and Assurance Curriculum | Waypoint Compliance Advisory",
     "meta": (
         "A doctoral-level curriculum in applied AI security and assurance, authored by Cameron Hopkin, "
-        "CISSP. Seven cores spanning adversarial machine learning, LLM and agent red teaming, secure AI "
-        "engineering, and AI governance."
+        "CISSP. Seven cores from adversarial ML to AI governance."
     ),
     "lede": (
         "A curriculum for people who will be responsible for AI systems when they fail, not just when "
@@ -149,7 +148,7 @@ CORES = [
         "title": "Mathematical and Statistical Foundations for AI",
         "page_title": "Mathematical and Statistical Foundations for AI | AI Security Curriculum",
         "meta": ("Core 1 of the applied AI security curriculum. Linear algebra, optimization, probability, "
-                 "and calibration framed toward the security and evaluation concerns that break real systems."),
+                 "and calibration, framed toward what breaks in real systems."),
         "spine": False,
         "description": (
             "The honest mathematical foundation, modernized and pointed at what breaks in real systems. "
@@ -218,7 +217,7 @@ CORES = [
         "title": "Language Models, Retrieval, and Agents",
         "page_title": "Language Models, Retrieval, and Agents | AI Security Curriculum",
         "meta": ("Core 3. Building RAG systems and tool-using agents, instrumenting them for retrieval "
-                 "and answer quality, and finding the silent failure modes operators never see."),
+                 "and answer quality, and finding their silent failure modes."),
         "spine": False,
         "description": (
             "Foundations through operations for reliable LLM applications, taught so the reliability "
@@ -248,7 +247,7 @@ CORES = [
         "title": "Adversarial Machine Learning and Model Robustness",
         "page_title": "Adversarial Machine Learning and Model Robustness | AI Security Curriculum",
         "meta": ("Core 4, first course of the security spine. Evasion, poisoning, backdoors, model "
-                 "extraction, membership inference, and the honest limits of defenses under adaptive attackers."),
+                 "extraction, membership inference, and the real limits of defenses."),
         "spine": True,
         "description": (
             "A rigorous treatment of the machine learning attack surface and the honest limits of "
@@ -286,8 +285,7 @@ CORES = [
         "title": "LLM and Agent Security: Red Teaming and Evaluation",
         "page_title": "LLM and Agent Security: Red Teaming and Evaluation | Full Syllabus",
         "meta": ("The complete Core 5 syllabus. Prompt injection, jailbreaks, guardrail evasion, agent "
-                 "containment, evaluation harnesses as security controls, and a structured red-team "
-                 "capstone. Fourteen weeks with outcomes, assessment, and rubric."),
+                 "containment, and evaluation harnesses as security controls."),
         "spine": True,
         "flagship": True,
         "description": (
@@ -367,9 +365,8 @@ CORES = [
         "code": "Core 7",
         "title": "AI Governance, Assurance, and Risk",
         "page_title": "AI Governance, Assurance, and Risk | AI Security Curriculum",
-        "meta": ("Core 7. NIST AI RMF and the Generative AI Profile, ISO/IEC 42001, the EU AI Act, "
-                 "assurance cases, post-training as governance, and measurable assurance versus paper "
-                 "compliance."),
+        "meta": ("Core 7. NIST AI RMF and its GenAI Profile, ISO/IEC 42001, the EU AI Act, assurance cases, "
+                 "and measurable assurance versus paper compliance."),
         "spine": True,
         "description": (
             "Ties the technical spine to policy, compliance, and assurance. This is where alignment and "
