@@ -303,6 +303,16 @@ def build_pillar() -> str:
     <h2>The seven cores</h2>
     <div class="core-grid">{cards}</div>
 
+    <h2>The hands-on companion</h2>
+    <p>Before the curriculum there is a free, self-directed lab. The
+    <a href="https://github.com/WaypointCA/ai-security-lab" rel="noopener">AI Security Lab</a> is a 36-week
+    open-source path covering foundations, offensive LLM work, classical adversarial machine
+    learning, and building out a home lab. It is MIT licensed and takes pull requests.</p>
+    <p>The lab is where you get reps. This curriculum is the same subject matter at research
+    level, where the deliverable stops being a completed exercise and becomes a threat model
+    that survives review, an evaluation methodology others can adopt, and an assurance case you
+    can defend.</p>
+
     <h2>Scope and structure</h2>
     <p>The credit scope is included because it shows what a serious treatment of this field
     requires. Cores 4 through 7 are the security spine.</p>
