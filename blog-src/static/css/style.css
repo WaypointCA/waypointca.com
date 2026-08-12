@@ -461,3 +461,20 @@ a:focus-visible, button:focus-visible {
 @media (max-width: 768px) {
     .author-bio { flex-direction: column; gap: 0.9rem; padding: 1.25rem; }
 }
+
+/* Four nav items plus the consultation CTA exceed a small phone's width and
+   pushed the whole page wider than the viewport. Let the bar wrap instead of
+   forcing one row. */
+@media (max-width: 520px) {
+    .nav {
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.35rem;
+        padding-top: 0.65rem;
+        padding-bottom: 0.65rem;
+    }
+    .nav-links { flex-wrap: wrap; justify-content: center; }
+    .nav-links a { padding: 0.35rem 0.5rem; font-size: 0.78rem; }
+    .nav-links a.nav-cta { padding: 0.35rem 0.75rem; }
+}
